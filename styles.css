@@ -1,0 +1,41 @@
+@import url("https://use.typekit.net/zyo0gxk.css");
+
+/* Nulstilling af styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Generelle styles – baggrund og typografi */
+body {
+  background-color: #F2E7DF; /* Varm beige farve */
+  color: #2B2B2B; /* Mørk grå-sort tekst – letlæselig uden at være for stor en kontrast */
+}
+
+h1, h2, h3, h4 {
+  font-family: "marine-up", Helvetica, sans-serif; /* Marine Up til alle overskrifter og underoverskrifter */
+}
+h1 {
+  font-size: 50pt; /* Hovedoverskrift */
+  margin-bottom: 0.5rem; /* Afstand under overskrift */
+}
+
+h2 {
+  font-size: 36pt; /* Underoverskrift */
+  margin-bottom: 0.5rem; /* Afstand under underoverskrift */
+}
+h3 {
+  font-size: 30pt; /* Labels til smagsprofil på vinsiderne */
+}
+
+h4 {
+  font-size: 24pt; /* Overskrifter i footer */
+  margin-bottom: 0.5rem; /* Afstand under footer-overskrifter */
+}
+
+p {
+  font-family: "futura-pt", Helvetica, sans-serif; /* Futura PT til brødtekst */
+  line-height: 1.6; /* Linjeafstand for at forbedre læsbarheden */
+  font-size: 16px; /* Brødtekst */
+}
