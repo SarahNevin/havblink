@@ -1,4 +1,6 @@
 /*header*/
+
+/* generelle styles for header */
 .header {
   background-color: #3C511B; /* Mørk olivengrøn baggrund */
   position: sticky; /* Gør headeren sticky så den bliver på skærmen, når man scroller */
@@ -9,16 +11,19 @@
   padding: 0 50px; /* Padding på 50px til venstre og højre for at skabe "luft" i siderne" */
 }
 
+/* Logo */
 .logo {
     display: flex; /* Flexbox for at centrere logo */
     width: 135px; /* Bredde på logo – dette og nedenstående for at styre størrelsen(SVG-fil) */
     height: 130px; /* Højde på logo */
 }
 
+/* styles for hovedmenupunkterne i navigationsmenuen */
+
 .navigationsmenu {
     list-style: none; /* For at undgå det vises med punkttegn */
     display: flex; /* For at placere menupunkterne horisontalt frem for vertikalt */
-    gap: 60px; /* Afstand mellem menupunkterne */
+    gap: 90px; /* Afstand mellem menupunkterne */
     margin: 0; /* For at fjerne margin */
     padding: 0; /* For at fjerne padding */
 }
@@ -43,9 +48,31 @@
     font-family: "marine-up", Helvetica, sans-serif; /* Marine Up til undersiderne, så de passer med hovedmenupunkternes udseende */
     color: #B06821; /* Matcher farven ved hover på hovedmenupunkterne */
     font-size: 18px; /* En lidt mindre størrelse i dropdown-menuen end på hovedmenupunkterne */
+    line-height: 2rem; /* Linjeafstand for at skabe luft mellem menupunkterne */
 }
 
 .dropdown-undersider a:hover {
     font-weight: bold; /* Gør teksten fed ved hover for at fremhæve, hvilket punkt man er ved at vælge */
 }
-  
+
+/* Dropdown-menufunktionalitet */
+
+.dropdown-menu {
+    position: relative; /* relative er nødvendig for at placere dropdown-menuerne i forhold til hovedmenuen */
+}
+
+.dropdown-undersider {
+    display: none; /* Skjuler dropdown-menuerne som standard */
+    position: absolute; /* Gør det muligt at placere dropdown-menuerne under hovedmenupunkterne */
+    top: 100%; /* Placerer dropdown-menuerne lige under hovedmenupunkterne */
+    left: 0; /* Venstrejustering for at matche hovedmenupunktets placering */
+    background-color: rgba(254, 254, 254, 0.95); /* Samme hvide farve som skriften i hovedmenupunkterne, men med rgba-værdier for at kunne sætte gennemsigtighed til 95% (hvid som kontrast til den mørkegrønne farve på headeren) */
+    padding: 10px; /* Padding for at give lidt luft omkring teksten i dropdown-menuen */
+    min-width: 150px; /* Minimumbredde på dropdown-menuerne, så undermenupunkterne kan være i dem og teksten dermed holde sig på én linje */
+    border-radius: 4px; /* Let rundede hjørner for et lidt blødere look, da matcher de rundede hjørner på f.eks. knapperne */
+    z-index: 1000; /* Sørger for at dropdown-menuerne lægger sig over sidens øvrige */
+}
+
+.dropdown-menu:hover .dropdown-undersider {
+    display: block; /* Viser dropdown-menu, når musen føres over hovedmenupunktet */
+}
