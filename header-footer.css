@@ -70,7 +70,7 @@
     padding: 10px; /* Padding for at give lidt luft omkring teksten i dropdown-menuen */
     min-width: 150px; /* Minimumbredde på dropdown-menuerne, så undermenupunkterne kan være i dem og teksten dermed holde sig på én linje */
     border-radius: 4px; /* Let rundede hjørner for et lidt blødere look, da matcher de rundede hjørner på f.eks. knapperne */
-    z-index: 1000; /* Sørger for at dropdown-menuerne lægger sig over sidens øvrige */
+    z-index: 1000; /* Sørger for at dropdown-menuerne lægger sig over sidens øvrige elementer */
 }
 
 .dropdown-menu:hover .dropdown-undersider {
