@@ -18,6 +18,7 @@ body {
 h1, h2, h3, h4 {
   font-family: "marine-up", Helvetica, sans-serif; /* Marine Up til alle overskrifter og underoverskrifter */
   font-weight: 400; /* Normal vægt for at gøre teksten nem at læse og så det passer med de øvrige tekstelementer */
+  line-height: 1.1; /* Linjeafstand justeres for at skabe mindre afstand ved overskrifter, der fylder mere end én linje */
 }
 h1 {
   font-size: 50pt; /* Hovedoverskrift */
@@ -53,7 +54,6 @@ p {
   
   .intro h1 {
     text-align: center; /* Centrerer hovedoverskriften */
-    line-height: 1.1;  /* Linjeafstand justeres for at skabe mindre afstand mellem de to linjer, overskriften deles op i */
     max-width: 12ch; /* Maksimalt antal anslag for at sørge for, overskriften deler sig på to linjer frem for at blive for lang. Dette giver et mere læsevenligt layout. */
   }
   

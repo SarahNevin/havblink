@@ -66,7 +66,7 @@
     left: 0; /* Venstrejustering for at matche hovedmenupunktets placering */
     background-color: rgba(254, 254, 254, 0.95); /* Samme hvide farve som skriften i hovedmenupunkterne, men med rgba-værdier for at kunne sætte gennemsigtighed til 95% (hvid som kontrast til den mørkegrønne farve på headeren) */
     padding: 10px; /* Padding for at give lidt luft omkring teksten i dropdown-menuen */
-    min-width: 135px; /* Minimumbredde på dropdown-menuerne, så undermenupunkterne kan være i dem og teksten dermed holde sig på én linje */
+    min-width: 140px; /* Minimumbredde på dropdown-menuerne, så undermenupunkterne kan være i dem og teksten dermed holde sig på én linje */
     border-radius: 4px; /* Let rundede hjørner for et lidt blødere look, da matcher de rundede hjørner på f.eks. knapperne */
     z-index: 1000; /* Sørger for at dropdown-menuerne lægger sig over sidens øvrige elementer */
 }
