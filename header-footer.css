@@ -18,19 +18,34 @@
 .navigationsmenu {
     list-style: none; /* For at undgå det vises med punkttegn */
     display: flex; /* For at placere menupunkterne horisontalt frem for vertikalt */
-    gap: 30px; /* Afstand mellem menupunkterne */
+    gap: 60px; /* Afstand mellem menupunkterne */
     margin: 0; /* For at fjerne margin */
     padding: 0; /* For at fjerne padding */
 }
 
-.dropdown-menu li {
+.navigationsmenu a {
     font-family: "marine-up", Helvetica, sans-serif; /* Marine Up til menupunkterne så disse matcher over- og underskrifter på resten af sitet */
     font-size: 24px; /* Størrelse på menupunkterne i navigationsmenuen */
+    color: #fefefe; /* Hvid tekstfarve for at skabe kontrast og gøre teksten nem at læse på den mørkegrønne baggrund */
+    text-decoration: none; /* For at fjerne understregning af links */
+}
+.navigationsmenu a:hover {
+    color: #B06821; /* varm orange farve ved hover for at gøre det tydeligt, hvad man vælger */
 }
 
-.dropdown-undersider li {
+/* Dropdown-menuerne under navigationsmenuen */
+
+.dropdown-undersider {
+    list-style: none; /* Fjerner punkttegn */
+}
+
+.dropdown-undersider a {
     font-family: "marine-up", Helvetica, sans-serif; /* Marine Up til undersiderne, så de passer med hovedmenupunkternes udseende */
+    color: #B06821; /* Matcher farven ved hover på hovedmenupunkterne */
     font-size: 18px; /* En lidt mindre størrelse i dropdown-menuen end på hovedmenupunkterne */
 }
 
-
+.dropdown-undersider a:hover {
+    font-weight: bold; /* Gør teksten fed ved hover for at fremhæve, hvilket punkt man er ved at vælge */
+}
+  
