@@ -23,9 +23,7 @@
 .navigationsmenu {
     list-style: none; /* For at undgå det vises med punkttegn */
     display: flex; /* For at placere menupunkterne horisontalt frem for vertikalt */
-    gap: 90px; /* Afstand mellem menupunkterne */
-    margin: 0; /* For at fjerne margin */
-    padding: 0; /* For at fjerne padding */
+    gap: 80px; /* Afstand mellem menupunkterne */
 }
 
 .navigationsmenu a {
@@ -68,9 +66,13 @@
     left: 0; /* Venstrejustering for at matche hovedmenupunktets placering */
     background-color: rgba(254, 254, 254, 0.95); /* Samme hvide farve som skriften i hovedmenupunkterne, men med rgba-værdier for at kunne sætte gennemsigtighed til 95% (hvid som kontrast til den mørkegrønne farve på headeren) */
     padding: 10px; /* Padding for at give lidt luft omkring teksten i dropdown-menuen */
-    min-width: 150px; /* Minimumbredde på dropdown-menuerne, så undermenupunkterne kan være i dem og teksten dermed holde sig på én linje */
+    min-width: 135px; /* Minimumbredde på dropdown-menuerne, så undermenupunkterne kan være i dem og teksten dermed holde sig på én linje */
     border-radius: 4px; /* Let rundede hjørner for et lidt blødere look, da matcher de rundede hjørner på f.eks. knapperne */
     z-index: 1000; /* Sørger for at dropdown-menuerne lægger sig over sidens øvrige elementer */
+}
+
+.længere-boks {
+    min-width: 185px; /* længere dropdown-menu for at matche tekstlængden i hovedmenupunktet "bæredygtighed", da det er længere end de øvrige */
 }
 
 .dropdown-menu:hover .dropdown-undersider {
