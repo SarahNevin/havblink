@@ -1,0 +1,36 @@
+/*header*/
+.header {
+  background-color: #3C511B; /* Mørk olivengrøn baggrund */
+  position: sticky; /* Gør headeren sticky så den bliver på skærmen, når man scroller */
+  display: flex; /* Flexbox for at få logo og navigationsmenu opdelt horisontalt */
+  align-items: center; /* Centrerer indholdet i headeren */
+  justify-content: space-between; /* Fordeler pladsen i flexbox, så logo er til venstre og navigationsmenu til højre */
+  height: 150px; /* Højden på headeren */
+  padding: 0 50px; /* Padding på 50px til venstre og højre for at skabe "luft" i siderne" */
+}
+
+.logo {
+    display: flex; /* Flexbox for at centrere logo */
+    width: 135px; /* Bredde på logo – dette og nedenstående for at styre størrelsen(SVG-fil) */
+    height: 130px; /* Højde på logo */
+}
+
+.navigationsmenu {
+    list-style: none; /* For at undgå det vises med punkttegn */
+    display: flex; /* For at placere menupunkterne horisontalt frem for vertikalt */
+    gap: 30px; /* Afstand mellem menupunkterne */
+    margin: 0; /* For at fjerne margin */
+    padding: 0; /* For at fjerne padding */
+}
+
+.dropdown-menu li {
+    font-family: "marine-up", Helvetica, sans-serif; /* Marine Up til menupunkterne så disse matcher over- og underskrifter på resten af sitet */
+    font-size: 24px; /* Størrelse på menupunkterne i navigationsmenuen */
+}
+
+.dropdown-undersider li {
+    font-family: "marine-up", Helvetica, sans-serif; /* Marine Up til undersiderne, så de passer med hovedmenupunkternes udseende */
+    font-size: 18px; /* En lidt mindre størrelse i dropdown-menuen end på hovedmenupunkterne */
+}
+
+
