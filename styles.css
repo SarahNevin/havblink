@@ -1,6 +1,7 @@
 @import url("https://use.typekit.net/zyo0gxk.css");
 
 /* Nulstilling af styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,7 @@
 }
 
 /* Generelle styles – baggrund og typografi */
+
 body {
   background-color: #F2E7DF; /* Varm beige farve */
   color: #2B2B2B; /* Mørk grå-sort tekst – letlæselig uden at være for stor en kontrast */
@@ -15,15 +17,16 @@ body {
 
 h1, h2, h3, h4 {
   font-family: "marine-up", Helvetica, sans-serif; /* Marine Up til alle overskrifter og underoverskrifter */
+  font-weight: 400; /* Normal vægt for at gøre teksten nem at læse og så det passer med de øvrige tekstelementer */
 }
 h1 {
   font-size: 50pt; /* Hovedoverskrift */
-  margin-bottom: 0.5rem; /* Afstand under overskrift */
+  margin-bottom: 20px /* Afstand under overskrift */
 }
 
 h2 {
   font-size: 36pt; /* Underoverskrift */
-  margin-bottom: 0.5rem; /* Afstand under underoverskrift */
+  margin-bottom: 20px; /* Afstand under underoverskrift */
 }
 h3 {
   font-size: 30pt; /* Labels til smagsprofil på vinsiderne */
@@ -39,3 +42,22 @@ p {
   line-height: 1.6; /* Linjeafstand for at forbedre læsbarheden */
   font-size: 16px; /* Brødtekst – jeg har valgt en rimelig stor størrelse for at gøre det let at læse */
 }
+
+/* introtekst */
+
+.intro {
+    display: flex; /* Flexbox bruges for at centrere hele introsektionen på siden */
+    flex-direction: column; /* Kolonne så overskrift og tekst vises vertikalt i stedet for horisontalt */
+    align-items: center; /* Centrerer indholdet på siden */
+  }
+  
+  .intro h1 {
+    text-align: center; /* Centrerer hovedoverskriften */
+    line-height: 1.1;  /* Linjeafstand justeres for at skabe mindre afstand mellem de to linjer, overskriften deles op i */
+    max-width: 12ch; /* Maksimalt antal anslag for at sørge for, overskriften deler sig på to linjer frem for at blive for lang. Dette giver et mere læsevenligt layout. */
+  }
+  
+  .intro p {
+    text-align: left; /* Brødteksten er venstrestillet for at gøre den nemmere at læse */
+    max-width: 42ch; /* Maksimalt antal anslag for at holde brødteksten på ca. 60 anslag inkl. mellemrum for at forbedre læsbarheden */
+  }
