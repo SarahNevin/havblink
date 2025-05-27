@@ -1,0 +1,10 @@
+.hero-billede {
+    max-width: 100%;  /* Maksimal bredde tilføjet for at forhindre, containeren fylder mere end hele viewportens bredde */
+    overflow: hidden; /* Forhindrer at billedet strækker sig uden for containerens bredde */
+  }
+  
+  .hero-billede img {
+    width: 100%; */ Billedet fylder containerens bredde */
+    height: auto; /* Højden justeres automatisk, så billedets proportioner bliver holdt */
+    display: block; /* Fjerner eventuelt mellemrum under billedet */
+  }
