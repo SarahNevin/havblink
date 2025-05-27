@@ -48,6 +48,11 @@ p {
   font-size: 16px; /* Brødtekst. Jeg har valgt en rimelig stor størrelse for at gøre det let at læse */
 }
 
+p a {
+  color: #2B2B2B; /* Samme farve som den øvrige brødtekst */
+  font-weight: bold; /* Fed skrift for at fremhæve links */
+}
+
   /* Undgå horisontal scrollbar */
 
   body {
