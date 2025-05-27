@@ -15,7 +15,7 @@ body {
   color: #2B2B2B; /* Mørk grå-sort tekst – letlæselig uden at være for stor en kontrast */
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: "marine-up", Helvetica, sans-serif; /* Marine Up til alle overskrifter og underoverskrifter */
   font-weight: 400; /* Normal vægt for at gøre teksten nem at læse og så det passer med de øvrige tekstelementer */
   line-height: 1.1; /* Linjeafstand justeres for at skabe mindre afstand ved overskrifter, der fylder mere end én linje */
@@ -37,6 +37,10 @@ h4 {
   font-size: 24pt; /* Overskrifter i footer */
   margin-bottom: 0.5rem; /* Afstand under footer-overskrifter */
 }
+
+h5 {
+    font-size: 20pt; /* produktnavn på forside */
+  }
 
 p {
   font-family: "futura-pt", Helvetica, sans-serif; /* Futura PT til brødtekst */

@@ -1,6 +1,7 @@
 /*header*/
 
 /* generelle styles for header */
+
 .header {
   background-color: #3C511B; /* Mørk olivengrøn baggrund */
   position: sticky; /* Gør headeren sticky så den bliver på skærmen, når man scroller */
@@ -12,6 +13,7 @@
 }
 
 /* Logo */
+
 .logo {
     display: flex; /* Flexbox for at centrere logo */
     width: 135px; /* Bredde på logo – dette og nedenstående for at styre størrelsen(SVG-fil) */
