@@ -26,7 +26,7 @@
 
 .artikel-tekst p {
     text-align: left; /* Brødteksten er venstrestillet for at gøre den nemmere at læse */
-    max-width: 43ch; /* Maksimalt antal anslag for at holde linjerne korte og læsevenlige */
+    max-width: 45ch; /* Maksimal antal anslag for at holde linjerne korte og læsevenlige */
     margin: auto; /* Centrerer teksten i artikelsektionen */
 }
 
