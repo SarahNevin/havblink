@@ -2,21 +2,45 @@
 
 .artikel {
     display: flex; /* Flexbox så billede og tekst står ved siden af hinanden frem for i en kolonne*/
+    width: 100%; /* Bredde på artikelsektionen er 100% af viewportens bredde */
     background-color: rgba(166, 119, 0, 0.60); /* 60% gennemsigtighed for at skabe mindre kontrast og gøre teksten nemmere at læse */
-    margin-top: 50px; /* For at skabe luft mellem introtekst og artikelsektionen */
 }
 
 .artikel-billede {
-    width: 100%; /* Billedet fylder hele bredden af artikelsektionen */
-    max-width: 720px; /* Maksimal bredde på billedet, så det kun fylder halvdelen af flexboxen */
+    flex: 1; /* Billedet fylder 50% af artikelsektionen. Uanset størrelse på skærmen fordeles pladsen ligelidt med de andre flex-items (i dette tilfælde tekstboksen) */
+    width: 50%; /* Billedets bredde er 50% af viewportens bredde */
     height: auto; /* Højden justeres automatisk for at bevare billedets proportioner */
 }
 
 .artikel-tekst {
-    max-width: 55ch; /* Maksimalt antal anslag, så linjelængden holdes læsevenlig */
+    flex: 1; /* Teksten fylder 50% af artikelsektionen */
+    width: 50%; /* Tekstens bredde er 50% af viewportens bredde */
     margin: auto; /* Centrerer artikelsektionen på siden */
 }
 
 .artikel-tekst h2 {
     text-align: center; /*Underoverskrift centreres for at skabe bedre balance i layoutet*/
+    max-width: 15ch; /* Underoverskrifterne må maks. være ca. 20 anslag inkl. mellemrum, før de går ned på en ny linje. Dette er for at matche længden på brødteksten nedenunder bedre. */
+    margin: auto; /* Centrerer underoverskriften i artikelsektionen */
+}
+
+.artikel-tekst p {
+    text-align: left; /* Brødteksten er venstrestillet for at gøre den nemmere at læse */
+    max-width: 43ch; /* Maksimalt antal anslag for at holde linjerne korte og læsevenlige */
+    margin: auto; /* Centrerer teksten i artikelsektionen */
+}
+
+/* Responsivt design for artikelsektionen */
+@media (max-width: 768px) {
+    .artikel {
+        flex-direction: column; /* på skærme under 768px vises billede og tekst i en kolonne frem for ved siden af hinanden på en række */
+    }
+    .artikel-billede,
+    .artikel-tekst {
+        width: 100vw; /* Både billede og tekst skal fylde 100% af viewportens bredde ved responsiv, da hvert element nu vises for sig selv i en kolonne frem for række */
+    }
+
+    .artikel-billede-højre {
+        flex-direction: column-reverse; /* Hvis billedet er på højre side, vises det responsivt over teksten i stedet for under. På den måde er rækkefølgen med billede efterfulgt af tekst fast ved responsiv visning frem for at skifte, som det gør ved en maksimal bredde over 768px. */
+    }
 }
