@@ -78,3 +78,30 @@ p a {
     text-align: left; /* Brødteksten er venstrestillet for at gøre den nemmere at læse */
     max-width: 42ch; /* Maksimalt antal anslag for at holde brødteksten på ca. 60 anslag inkl. mellemrum for at forbedre læsbarheden */
   }
+
+/* styles til knapper */
+
+a.button {
+  background-color: #094B72; /* Mørkeblå farve som standard */
+  color: #fefefe; /* Hvid tekstfarve for kontrast */
+  text-decoration: none; /* Fjerner understregning af teksten */
+  padding: 10px 20px; /* Indvendig afstand for at gøre knapperne større og mere klikbare */
+  border: none; /* Ingen kant på knapperne */
+  border-radius: 4px; /* Rundede hjørner for et blødere look */
+  font-family: "futura-pt", Helvetica, sans-serif; /* Futura PT som skrifttype for at matche brødteksten */
+  font-size: 20px; /* Størrelse på teksten */
+  font-weight: 500; /* Medium vægt for at gøre teksten tydeligere */
+  display: inline-block; /* Får <a>-linket til at opføre sig som en knap */
+  cursor: pointer; /* Skifter markøren til en hånd ved hover for at gøre det klart, at man kan klikke */
+  transition: background-color 0.3s ease; /* Glidende overgang til farveskift ved hover */
+}
+
+a.button:hover {
+  background-color: #B06821; /* Orange farve ved hover, der matcher farven ved hover i headeren for konsistens. Knappen skifte farve ved hover for at understrege, knappen er klikbar, og for at vise hvad man er ved at vælge */
+}
+
+.centrer-knap {
+  display: flex; /* flexbox bruges så knappen kan være midt på siden */
+  justify-content: center; /* Centrerer knappen */
+  margin: 50px 0; /* Afstand over og under knappen for at skabe luft til de øvrige elementer */
+}
