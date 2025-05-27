@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-/* Generelle styles – baggrund og typografi */
+/* Generelle styles: baggrund og typografi */
 
 body {
   background-color: #F2E7DF; /* Varm beige farve */
@@ -39,21 +39,29 @@ h4 {
 }
 
 h5 {
-    font-size: 20pt; /* produktnavn på forside */
+    font-size: 20pt; /* Produktnavn på forside */
   }
 
 p {
   font-family: "futura-pt", Helvetica, sans-serif; /* Futura PT til brødtekst */
   line-height: 1.6; /* Linjeafstand for at forbedre læsbarheden */
-  font-size: 16px; /* Brødtekst – jeg har valgt en rimelig stor størrelse for at gøre det let at læse */
+  font-size: 16px; /* Brødtekst. Jeg har valgt en rimelig stor størrelse for at gøre det let at læse */
 }
 
-/* introtekst */
+  /* Undgå horisontal scrollbar */
+
+  body {
+    overflow-x: hidden; /* Forhindrer der kommer en horisontal scrollbar, hvis indholdet strækker sig længere end bredden på viewportern */
+}
+
+
+/* Introtekst */
 
 .intro {
     display: flex; /* Flexbox bruges for at centrere hele introsektionen på siden */
     flex-direction: column; /* Kolonne så overskrift og tekst vises vertikalt i stedet for horisontalt */
     align-items: center; /* Centrerer indholdet på siden */
+    margin-bottom: 50px; /* For at skabe luft mellem introteksten og den nedenstående sektion */
   }
   
   .intro h1 {
