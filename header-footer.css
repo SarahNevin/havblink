@@ -80,3 +80,17 @@
 .dropdown-menu:hover .dropdown-undersider {
     display: block; /* Viser dropdown-menu, når musen føres over hovedmenupunktet */
 }
+
+/* responsiv header (burgermenu) */
+
+@media (max-width: 768px) {
+    .burgerikon {
+        display: block; /* Viser burgerikonet på mindre skærme */
+        cursor: pointer; /* Skifter markøren til en hånd ved hover, så det er klart, man kan klikke */      
+        }
+
+}
+
+#mobilmenu-toggle {
+  display: none;
+}
