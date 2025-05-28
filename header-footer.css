@@ -88,7 +88,6 @@
         display: block; /* Viser burgerikonet på mindre skærme */
         cursor: pointer; /* Skifter markøren til en hånd ved hover, så det er klart, man kan klikke */      
         }
-
 }
 
 #mobilmenu-toggle {
