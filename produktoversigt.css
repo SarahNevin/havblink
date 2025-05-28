@@ -1,0 +1,26 @@
+/* produktpræsentation i flexbox med billede og tekst*/
+
+.produktoversigt {
+    display: flex; /* Flexbox for at få tekstsektion og billede til at være ved siden af hinanden */
+    justify-content: center; /* Centrerer hele produktoversigten på siden */
+    gap: 100px; /* For at få noget luft mellem billede og tekst */
+    margin: 70px; /* Margin for at skabe luft mellem hver produktbeskrivelse */
+}
+
+.produktbeskrivelse {
+    flex-direction: column; /* Kolonne for at få de tre elementer – overskrift, brødtekst og læs mere-knap – stablet vertikalt */
+}
+
+.produktbeskrivelse h2 {
+    text-align: center; /*Underoverskrift centreres for at skabe bedre balance i layoutet*/
+    max-width: 15ch; /* Underoverskrifterne må maks. være ca. 20 anslag inkl. mellemrum, før de går ned på en ny linje. Dette er for at matche længden på brødteksten nedenunder bedre. */
+}
+
+.produktbeskrivelse p {
+    text-align: left; /* Brødteksten er venstrestillet for at gøre den nemmere at læse */
+    max-width: 45ch; /* Maksimal antal anslag for at holde linjerne korte og læsevenlige */
+}
+
+.læs-mere {
+    justify-content: flex-end; /* Justerer knappen til højre i produktoversigten */
+}
