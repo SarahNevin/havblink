@@ -41,6 +41,6 @@
     }
 
     .artikel-billede-højre {
-        flex-direction: column-reverse; /* Hvis billedet er på højre side, vises det responsivt over teksten i stedet for under. På den måde er rækkefølgen med billede efterfulgt af tekst fast ved responsiv visning frem for at skifte, som det gør ved en maksimal bredde over 768px. */
+        flex-direction: column-reverse; /* Hvis billedet er på højre side, vises det responsivt over teksten i stedet for under. På den måde er rækkefølgen med billede efterfulgt af tekst fast ved responsiv visning frem for at skifte, som det gør ved en  bredde over 768px. */
     }
 }
