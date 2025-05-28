@@ -23,6 +23,7 @@
     max-width: 45ch; /* Maksimal antal anslag for at holde linjerne korte og læsevenlige */
 }
 
+
 .knap-produktside {
     align-self: flex-end; /* Justerer knappen til højre i produktoversigten */
 }
