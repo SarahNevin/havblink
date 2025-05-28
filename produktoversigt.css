@@ -8,7 +8,9 @@
 }
 
 .produktbeskrivelse {
-    flex-direction: column; /* Kolonne for at få de tre elementer – overskrift, brødtekst og læs mere-knap – stablet vertikalt */
+    display: flex; /* Flexbox for at kunne bruge "column" så underoverskrift, brødtekst og læs mere-knap stables vertikalt (knap skal vises i bunden til højre) */
+    flex-direction: column;
+    justify-content: space-between; /* Fordeler pladsen mellem underoverskrift, brødtekst og knap */
 }
 
 .produktbeskrivelse h2 {
@@ -23,7 +25,6 @@
 
 .læs-mere {
     align-self: flex-end; /* Justerer knappen til højre i produktoversigten */
-    margin-top: auto; /* Giver knappen en automatisk margin i toppen for at skabe luft mellem brødteksten og knappen */
 }
 
 /* Responsivt design for produktoversigten */
@@ -37,6 +38,11 @@
 
     .produktbillede-højre {
         flex-direction: column-reverse; /* Hvis billedet er på højre side, vises det responsivt over teksten i stedet for under. På den måde er rækkefølgen med billede efterfulgt af tekst fast ved responsiv visning frem for at skifte, som det gør ved en bredde over 768px. */
+    }
+
+    .læs-mere {
+        align-self: center; /* Knappen centreres ved responsive for et mere harmonisk og intuitivt layout */
+        margin-top: 20px; /* Margin mellem brødtekst og knap for at skabe luft */
     }
 
 }
