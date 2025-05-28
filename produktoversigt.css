@@ -22,5 +22,21 @@
 }
 
 .læs-mere {
-    justify-content: flex-end; /* Justerer knappen til højre i produktoversigten */
+    align-self: flex-end; /* Justerer knappen til højre i produktoversigten */
+    margin-top: auto; /* Giver knappen en automatisk margin i toppen for at skabe luft mellem brødteksten og knappen */
+}
+
+/* Responsivt design for produktoversigten */
+@media (max-width: 768px) {
+    .produktoversigt {
+        flex-direction: column; /* På skærme under 768px vises billede og tekst i en kolonne frem for ved siden af hinanden på en række */
+        align-items: center; /* Centrerer hele indholdet af containeren på siden */
+        gap: 20px; /* Mindre afstand mellem elementerne ved responsiv visning */
+    }
+
+
+    .produktbillede-højre {
+        flex-direction: column-reverse; /* Hvis billedet er på højre side, vises det responsivt over teksten i stedet for under. På den måde er rækkefølgen med billede efterfulgt af tekst fast ved responsiv visning frem for at skifte, som det gør ved en bredde over 768px. */
+    }
+
 }
