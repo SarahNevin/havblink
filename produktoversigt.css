@@ -23,7 +23,7 @@
     max-width: 45ch; /* Maksimal antal anslag for at holde linjerne korte og læsevenlige */
 }
 
-.læs-mere {
+.knap-produktside {
     align-self: flex-end; /* Justerer knappen til højre i produktoversigten */
 }
 
@@ -40,7 +40,7 @@
         flex-direction: column-reverse; /* Hvis billedet er på højre side, vises det responsivt over teksten i stedet for under. På den måde er rækkefølgen med billede efterfulgt af tekst fast ved responsiv visning frem for at skifte, som det gør ved en bredde over 768px. */
     }
 
-    .læs-mere {
+    .knap-produktside {
         align-self: center; /* Knappen centreres ved responsive for et mere harmonisk og intuitivt layout */
         margin-top: 20px; /* Margin mellem brødtekst og knap for at skabe luft */
     }
