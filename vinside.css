@@ -1,5 +1,60 @@
+/* Flexbox til introsektion */
 
+.vinintro {
+    display: flex; /* Flexbox for at centrere hele introsektionen på siden */
+    flex-direction: row; /* Rækkevisning for at placere tekst og billede ved siden af hinanden */
+    justify-content: space-between; /* Fordeler pladsen mellem tekst og billede */
+    align-items: stretch; /* Strækker elementerne i introsektionen, så de fylder hele højden af containeren */
+    padding: 60px 80px; /* Padding for at give luft omkring indholdet i introsektionen */
+    max-width: 1200px; /* Maksimal bredde for at begrænse bredden på introsektionen */
+    margin: 0 auto; /* Centrerer introsektionen horisontalt på siden */
+}
 
+.vinintro-tekst {
+    display: flex; /* Flexbox for at arrangere tekst i en kolonne */
+    flex-direction: column; /* Tekst vises i en kolonne */
+    justify-content: space-between; /* Fordeler pladsen mellem overskrift brødtekst og knap */
+    flex: 1; /* Giver tekstboksen en fleksibel bredde, så den fylder den resterende plads i containeren */
+}
+
+.vinintro-tekst h1 {
+    max-width: 15ch; /* Maksimalt antal anslag for at sørge for, at overskriften ikke bliver for lang */
+    text-align: center; /* Centrerer hovedoverskriften for at skabe balance i layoutet */
+}
+
+.vinintro-tekst p {
+    max-width: 45ch; /* Maksimalt antal anslag for at holde brødteksten på ca. 60 anslag inkl. mellemrum for at forbedre læsbarheden */
+    font-family: "futura-pt", Helvetica, sans-serif; /* Futura PT til brødtekst */
+    line-height: 1.6; /* Linjeafstand for at forbedre læsbarheden */
+    font-size: 16px; /* Størrelse på brødtekst */
+}
+
+.knap-vinbeskrivelse {
+    align-self: flex-end;
+}
+
+.vinintro-billede {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centrerer billedet horisontalt */
+    gap: 30px; /* Giver luft mellem billedet og teksten */
+    flex: 1; /* Giver billedet en fleksibel bredde, så det fylder den resterende plads i containeren */
+    justify-content: center; /* Centrerer billedet i containeren */
+}
+
+.vinintro-certifikater {
+    display: flex; /* Flexbox for at arrangere certifikaterne i en række */
+    flex-direction: column; /* Certifikaterne vises i en kolonne */
+    align-items: flex-start; /* Venstrejusterer certifikaterne, så de står på linje vertikalt */
+    gap: 20px; /* Giver luft mellem certifikaterne */
+}
+
+.vinintro-certifikater img {
+    height: 100px; /* Billederne i certifikaterne skal have en fast højde */
+    width: auto; /* Bredden justeres automatisk for at bevare proportionerne */
+}
+
+/* Vinbeskrivelse med info om vinen og smagsprofil */
 
 .vinbeskrivelse {
    display: grid; /* Grid layout for at arrangere ikonerne i et gitter */
