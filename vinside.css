@@ -34,8 +34,7 @@
 .smagsprofil-linje {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
-  gap: 10px;
+  margin-bottom: 20px; /* Margin under hver linje for at skabe luft */
 }
 
 .smagsprofil-linje img {
@@ -50,9 +49,13 @@
 
 .smagsprofil-linje > span:first-child,
 .smagsprofil-linje > span:last-child {
-  width: 80px; /* Giver labels en fast bredde for at sikre ensartethed, giver mere plads til længere ord xom "kraftig" */
-  text-align: right;
+  width: 80px; /* Giver labels en fast bredde */
+  text-align: left; /* Venstrestiller labels for at gøre layoutet mere ensartet */
   align-self: flex-start; /* Justerer labels til toppen af linjen */
+}
+
+.bred-label {
+  width: 120px; /* For at gøre plads til det længere ord "kraftig" uden cut-off */
 }
 
 .vinflaske-billede {
@@ -65,6 +68,10 @@
   background-color: rgba(166, 119, 0, 0.6);
   padding: 20px; /* Padding for at give luft omkring teksten i smagsprofil-sektionen */
   overflow: visible; /* Sørger for at indholdet teksten ikke bliver cut-off, hvis den er for lang */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrerer indholdet i madparring-sektionen */
+  justify-content: center; /* Centrerer indholdet vertikalt */
 }
 
 .madparring {
@@ -74,6 +81,7 @@
   display: flex;
   flex-direction: column;
   align-items: center; /* Centrerer indholdet i madparring-sektionen */
+  justify-content: center; /* Centrerer indholdet vertikalt */
 }
 
 .solaris-info {
@@ -89,24 +97,31 @@
 .smagsnoter {
   grid-area: smagsnoter; 
   background-color: rgba(166, 119, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrerer indholdet i smagsnoter-sektionen */
+  justify-content: center; /* Centrerer indholdet vertikalt */
 }
 
 .vinbeskrivelse span {
   font-family: "marine-up", Helvetica, sans-serif; /* Marine Up på labels for at matche øvrige over- og underskrifter */
-  font-size: 30pt; /* Størrelse på labels i vinbeskrivelsen */
+  font-size: 20pt; /* Størrelse på labels i vinbeskrivelsen */
   text-align: center; /* Centrerer labels for at skabe balance i layoutet */
   margin-bottom: 10px; /* Margin under labels for at skabe luft */
 }
 
 .vinbeskrivelse h2 {
-  text-align: center; /* Centrerer overskrifter for at skabe balance i layoutet */
-  margin-bottom: 20px; /* Margin under overskrifter for at skabe luft */
+  text-align: center; /* centrering af overskriften for at passe til layoutet på resten af websitet */
+  margin-left: auto; /* Ovenstående centrerer ikke overskriften helt. Derfor bruges margin-left + margin right auto */
+  margin-right: auto;
+  margin-bottom: 20; /* Margin under og overskrifter for at skabe luft */
+  max-width: 15ch;
 }
 
 .vinbeskrivelse p {
   font-family: "futura-pt", Helvetica, sans-serif; /* Futura PT til brødtekst */
   line-height: 1.6; /* Linjeafstand for at forbedre læsbarheden */
   font-size: 16px; /* Størrelse på brødtekst */
-  margin: 0 auto; /* Centrerer teksten i hver sektion */
-  max-width: 600px; /* Maksimal bredde for at holde linjerne korte og læsevenlige */
+  margin: 20px auto; /* Mere luft top og bund. Centrerer teksten i hver sektion */
+  max-width: 45ch; /* Maksimal antal anslag for at holde linjerne korte og læsevenlige */
 }
