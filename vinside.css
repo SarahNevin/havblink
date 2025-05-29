@@ -1,3 +1,6 @@
+
+
+
 .vinbeskrivelse {
    display: grid; /* Grid layout for at arrangere ikonerne i et gitter */
    grid-template-columns: 1fr 1fr; /* To kolonner, der hver tager halvdelen af bredden */
@@ -5,7 +8,6 @@
     "vinflaske-billede smagsprofil"
     "madparring solaris-info"
     "solaris-klima smagsnoter"; /* Definerer områderne i gitteret */
-    gap: 20px; /* For at få luft mellem gitterelementerne */
 }
 
 .ikoner img {
@@ -30,4 +32,37 @@
   display: flex;
   align-items: center;
   gap: 4px;
+}
+
+
+.vinflaske-billede {
+  grid-area: vinflaske-billede;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.smagsprofil {
+  grid-area: smagsprofil;
+  background-color: rgba(166, 119, 0, 0.6);
+}
+
+.madparring {
+  grid-area: madparring;
+  background-color: rgba(166, 119, 0, 0.6);
+}
+
+.solaris-info {
+  grid-area: solaris-info;
+  background-color: #CBE3E2;
+}
+
+.solaris-klima {
+  grid-area: solaris-klima;
+  background-color: #CBE3E2;
+}
+
+.smagsnoter {
+  grid-area: smagsnoter;
+  background-color: rgba(166, 119, 0, 0.6);
 }
