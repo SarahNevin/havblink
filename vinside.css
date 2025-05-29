@@ -180,3 +180,111 @@
   margin: 20px auto; /* Mere luft top og bund. Centrerer teksten i hver sektion */
   max-width: 45ch; /* Maksimal antal anslag for at holde linjerne korte og læsevenlige */
 }
+
+/* Styles til responsive */
+
+@media (max-width: 768px) {
+    .vinintro {
+        flex-direction: column; /* Kolonnevisning for at placere tekst og billede under hinanden */
+        align-items: center; /* Centrerer indholdet horisontalt */
+    }
+
+  .vinintro-tekst h1 {
+    font-size: 30px;
+    max-width: 100%;
+  }
+
+  .knap-vinbeskrivelse {
+    align-self: center;
+    margin-top: 20px;
+  }
+
+  .vinintro-billede {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .vinintro-certifikater {
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .vinintro-certifikater img {
+    height: 60px;
+  }
+}
+
+/* Responsive styles til vinbeskrivelse-grid (smagsprofil) */
+@media (max-width: 768px) {
+
+    .vinbeskrivelse {
+        display: flex; /* Flexbox for at arrangere indholdet i en kolonne */
+        flex-direction: column; /* Kolonnevisning for at placere alle sektioner under hinanden */
+    }
+    .vinflaske-billede img {
+    width: 100%;
+    height: auto;
+  }
+
+  .smagsprofil,
+  .madparring,
+  .solaris-info,
+  .solaris-klima,
+  .smagsnoter {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .ikoner {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .ikoner img {
+    width: 60px;
+  }
+
+  .smagsprofil-linje {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .smagsprofil-linje span {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .smagsprofil-linje > span:first-child,
+  .smagsprofil-linje > span:last-child {
+    width: 40px; /* Giver labels en mindre bredde */
+    text-align: center;
+  }
+
+  .vinbeskrivelse h2 {
+    font-size: 24px;
+    max-width: 25ch;
+  }
+
+  .vinbeskrivelse p {
+    font-size: 15px;
+    max-width: 70%;
+    text-align: left; /* Venstrestiller brødteksten for bedre læsbarhed */
+  }
+  .vinbeskrivelse span {
+    font-size: 20px; /* Mindre skriftstørrelse for labels i responsive */
+  }
+
+}
+
+/* Elementer byttes rundt i responsive, så profilerne, der beskriver vinen altid kommer før det billede/tekst, der står ved siden af i desktop-versionen */
+@media (max-width: 768px) {
+  .smagsprofil { order: 1; }
+  .vinflaske-billede { order: 2; }
+  .madparring { order: 3; }
+  .solaris-info { order: 4; }
+  .smagsnoter { order: 5; }
+  .solaris-klima { order: 6; }
+}
