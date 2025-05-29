@@ -20,6 +20,12 @@
     height: 130px; /* Højde på logo */
 }
 
+.logo svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* styles for hovedmenupunkterne i navigationsmenuen */
 
 .navigationsmenu {

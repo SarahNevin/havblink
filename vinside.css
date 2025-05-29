@@ -1,0 +1,33 @@
+.vinbeskrivelse {
+   display: grid; /* Grid layout for at arrangere ikonerne i et gitter */
+   grid-template-columns: 1fr 1fr; /* To kolonner, der hver tager halvdelen af bredden */
+   grid-template-areas: 
+    "vinflaske-billede smagsprofil"
+    "madparring solaris-info"
+    "solaris-klima smagsnoter"; /* Definerer områderne i gitteret */
+    gap: 20px; /* For at få luft mellem gitterelementerne */
+}
+
+.ikoner img {
+    width: 80px; /* Billederne i ikonerne skal have en fast bredde */
+    height: auto; /* Højden justeres automatisk for at bevare proportionerne */
+    margin-bottom: 10px; /* Margin under billederne for at skabe luft */
+}
+
+.smagsprofil-linje {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.smagsprofil-linje img {
+    width: 80px; /* Billederne i ikonerne skal have en fast bredde */
+    height: auto; /* Højden justeres automatisk for at bevare proportionerne */
+}
+
+.smagsprofil-linje span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
