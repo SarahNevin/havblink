@@ -82,14 +82,107 @@
 }
 
 /* responsiv header (burgermenu) */
-
-@media (max-width: 768px) {
-    .burgerikon {
-        display: block; /* Viser burgerikonet på mindre skærme */
-        cursor: pointer; /* Skifter markøren til en hånd ved hover, så det er klart, man kan klikke */      
-        }
+.mobilmenu {
+  position: relative;
+  display: none; /* skjules på desktop */
 }
 
+/* Vis burgerikon */
+.burgerikon,
+.luk {
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10001;
+}
+
+.burgerikon {
+  display: block;
+}
+
+.luk {
+  display: none;
+}
+
+/* Skjul checkbox */
 #mobilmenu-toggle {
   display: none;
 }
+
+/* Mobilnavigation */
+#navigation-mobil {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #3C511B;
+  z-index: 10000;
+  overflow-y: auto;
+
+}
+
+
+
+
+/* Når checkbox er checked – vis menu og X */
+#mobilmenu-toggle:checked ~ .burgerikon {
+  display: none;
+}
+
+#mobilmenu-toggle:checked ~ .luk {
+  display: block;
+}
+
+#mobilmenu-toggle:checked ~ #navigation-mobil {
+  display: block;
+}
+@media (max-width: 768px) {
+  .mobilmenu {
+    display: block;
+  }
+
+  #navigation-desktop {
+    display: none;
+  }
+}
+
+/* Undermenuer */
+#navigation-mobil ul {
+  padding: 0;
+}
+
+/* Font i mobilmenu */
+#navigation-mobil li {
+  font-family: "marine-up", Helvetica, sans-serif;
+  font-size: 20px;
+  color: #fefefe;
+  text-decoration: none;
+  list-style: none; /* Fjerner punkttegn fra menupunkter */
+  padding: 10px 0; /* Padding for at gøre menupunkterne større og mere klikbare */
+}
+
+#navigation-mobil a {
+  color: #fefefe; /* Hvid tekstfarve for kontrast */
+  text-decoration: none; /* Fjerner understregning af links */
+}
+
+#navigation-mobil li:hover {
+  color: #B06821; /* varm orange farve ved hover for at matche styles i desktop-navigationen */
+  font-weight: bold;
+}
+
+#navigation-mobil a:hover {
+  color: #B06821; /* varm orange farve ved hover for at matche styles i desktop-navigationen */
+  font-weight: bold;
+}
+
+/* Undermenu mobil */
+#navigation-mobil input[type="checkbox"] {
+  display: none;
+}
+
