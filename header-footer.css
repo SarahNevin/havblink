@@ -14,7 +14,7 @@
 
 /* Logo */
 
-.logo {
+.logo a {
     display: flex; /* Flexbox for at centrere logo */
     width: 135px; /* Bredde på logo – dette og nedenstående for at styre størrelsen(SVG-fil) */
     height: 130px; /* Højde på logo */
@@ -158,7 +158,7 @@
   padding: 0 50px; /* Padding på 50px til venstre og højre for at skabe "luft" i siderne" */
 }
 
-.logo {
+.logo a {
     width: 85px; /* Bredde på logo – dette og nedenstående for at styre størrelsen(SVG-fil) */
     height: 80px; /* Højde på logo */
 }
