@@ -94,9 +94,8 @@
   cursor: pointer;
   color: #fff;
   position: absolute;
-  top: 20px;
-  right: 20px;
   z-index: 10001;
+  position: relative; /* For at placere ikonerne i midten af headeren vertikalt */
 }
 
 .burgerikon {
@@ -126,9 +125,6 @@
 
 }
 
-
-
-
 /* Når checkbox er checked – vis menu og X */
 #mobilmenu-toggle:checked ~ .burgerikon {
   display: none;
@@ -157,6 +153,15 @@
   #navigation-desktop {
     display: none;
   }
+.header {
+  height: 100px; /* Højden på headeren */
+  padding: 0 50px; /* Padding på 50px til venstre og højre for at skabe "luft" i siderne" */
+}
+
+.logo {
+    width: 85px; /* Bredde på logo – dette og nedenstående for at styre størrelsen(SVG-fil) */
+    height: 80px; /* Højde på logo */
+}
 }
 
 /* Undermenuer */
