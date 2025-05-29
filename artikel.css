@@ -38,6 +38,7 @@
     .artikel-billede,
     .artikel-tekst {
         width: 100vw; /* Både billede og tekst skal fylde 100% af viewportens bredde ved responsiv, da hvert element nu vises for sig selv i en kolonne frem for række */
+        margin-bottom: 20px; /* Margin tilføjet for at skabe luft mellem elementerne */
     }
 
     .artikel-billede-højre {
