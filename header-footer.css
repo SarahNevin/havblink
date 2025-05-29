@@ -138,9 +138,16 @@
   display: block;
 }
 
-#mobilmenu-toggle:checked ~ #navigation-mobil {
-  display: block;
+#mobilmenu-toggle:checked ~ #navigation-mobil { /* Disse styles, der styrer menupunkternes placering gælder kun, når den responsive menu er åben (så de ikke ødelægger burger- og x-ikonernes funktionalitet og placering) */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
 }
+
+
 @media (max-width: 768px) {
   .mobilmenu {
     display: block;
