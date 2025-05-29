@@ -90,7 +90,7 @@
 /* Vis burgerikon */
 .burgerikon,
 .luk {
-  font-size: 30px;
+  font-size: 40px;
   cursor: pointer;
   color: #fff;
   position: absolute;
@@ -145,6 +145,7 @@
   align-items: center;
   padding: 20px;
   text-align: center;
+  overflow-y: hidden; /* skjul vertikal scrollbar, så der ikke kommer en scrollbar inde i selve overlay-menuen, når undermenupunkterne foldes ud. */
 }
 
 
@@ -173,6 +174,11 @@
   padding: 10px 0; /* Padding for at gøre menupunkterne større og mere klikbare */
 }
 
+.mobil-undersider a {
+  font-size: 16px; /* Lidt mindre skriftstørrelse for undermenupunkter */
+  padding-left: 20px; /* Indrykning for at adskille undermenupunkter fra hovedmenupunkter */
+}
+
 #navigation-mobil a {
   color: #fefefe; /* Hvid tekstfarve for kontrast */
   text-decoration: none; /* Fjerner understregning af links */
@@ -188,8 +194,21 @@
   font-weight: bold;
 }
 
-/* Undermenu mobil */
+/* Undermenu mobil - skjul checkboxe */
 #navigation-mobil input[type="checkbox"] {
   display: none;
 }
+
+/* Skjul automatisk undermenupunkter i den responsive menu */
+.mobil-undersider {
+  display: none;
+  padding-left: 20px;
+}
+
+/* Vis undermenupunkter, når det responsive overlay er åbent */
+
+#navigation-mobil input[type="checkbox"]:checked + .mobil-undersider {
+  display: block;
+}
+
 
