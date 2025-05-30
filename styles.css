@@ -34,12 +34,12 @@ h3 {
 }
 
 h4 {
-  font-size: 24pt; /* Overskrifter i footer */
+  font-size: 20pt; /* Overskrifter i footer */
   margin-bottom: 0.5rem; /* Afstand under footer-overskrifter */
 }
 
 h5 {
-    font-size: 20pt; /* Produktnavn på forside */
+    font-size: 18pt; /* Produktnavn på forside */
   }
 
 p {

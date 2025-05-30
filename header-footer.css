@@ -234,9 +234,8 @@
   gap: 20px;
 }
 
-.footer h3 {
+.footer h4 {
   margin-bottom: 20px;
-  font-size: 20px; /* Størrelse på overskrifter i footer */
 }
 
 .footer p, .footer a {
