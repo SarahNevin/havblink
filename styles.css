@@ -99,3 +99,56 @@ a.button:hover {
   justify-content: center; /* Centrerer knappen */
   margin: 50px 0; /* Afstand over og under knappen for at skabe luft til de øvrige elementer */
 }
+
+@media screen and (max-width: 768px) {
+
+  h1 {
+    font-size: 36pt;
+  }
+
+  h2 {
+    font-size: 28pt;
+  }
+
+  h3 {
+    font-size: 24pt;
+  }
+
+  h4 {
+    font-size: 16pt;
+  }
+
+  h5 {
+    font-size: 14pt;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .intro {
+    padding: 0 20px; /* Indvendig margen for bedre afstand på små skærme */
+    margin-bottom: 40px;
+  }
+
+  .intro h1 {
+    max-width: 100%; /* Tillad overskriften at fylde mere */
+    font-size: 36pt; /* Reduceret størrelse */
+  }
+
+  .intro p {
+    max-width: 100%;
+    text-align: center; /* Midterjusteret brødtekst på mobil for visuelt bedre balance */
+    font-size: 15px;
+  }
+
+  a.button {
+    font-size: 18px;
+    padding: 10px 16px;
+  }
+
+  .centrer-knap {
+    margin: 40px 0;
+    padding: 0 20px;
+  }
+}
