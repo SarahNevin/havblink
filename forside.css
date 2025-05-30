@@ -120,3 +120,48 @@
     text-align: left; /* Brødteksten er venstrestillet for at gøre den nemmere at læse */
     max-width: 42ch; /* Maksimalt antal anslag for at holde brødteksten på ca. 60 anslag inkl. mellemrum for at forbedre læsbarheden */
   }
+
+/* Responsivt design til forsiden */
+
+  @media (max-width: 768px) {
+  /* Hero-billede */
+  .hero-billede img {
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* Slider overskrift */
+  .vine-overskrift {
+    margin: 20px 20px 0 20px;
+    text-align: center;
+  }
+
+  /* Slider */
+  .vine-container {
+    padding: 10px 0;
+    margin: 0;
+    padding: 20px; /* Padding omkring slideren for at skabe luft */
+  }
+
+  .scrollbar {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .slide {
+    width: 250px;
+    margin: 0 10px;
+  }
+
+  /* Brandhistorie-sektion */
+
+  .brandhistorie h2 {
+    text-align: center; /* Centrerer hovedoverskriften */
+    max-width: 12ch; /* Maksimalt antal anslag for at sørge for, overskriften deler sig på to linjer frem for at blive for lang. Dette giver et mere læsevenligt layout. */
+  }
+  
+  .brandhistorie p {
+    text-align: left; /* Brødteksten er venstrestillet for at gøre den nemmere at læse */
+    max-width: 42ch; /* Maksimalt antal anslag for at holde brødteksten på ca. 60 anslag inkl. mellemrum for at forbedre læsbarheden */
+  }
+}
