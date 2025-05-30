@@ -19,10 +19,11 @@
     align-items: center;
     height: 100vh; /* Højden på containeren er 100% af viewportens højde */
     overflow: hidden; /* Forhindrer at indholdet strækker sig uden for containerens bredde */
+    overflow-y: hidden; /* Forhindrer vertikal scrollbar, da vi kun vil have horisontal scrolling */
   }
 
   .vine-container::-webkit-scrollbar {
-    height: 7px; /* Højden på scrollbar sættes til 0 for at skjule den */
+    height: 10px; /* Højden på scrollbar sættes til 0 for at skjule den */
   }
 
   .vine-container::-webkit-scrollbar-track {
@@ -31,18 +32,19 @@
   }
 
   .vine-container::-webkit-scrollbar-thumb {
-    background-color: #fefefe; /* Hvid farve på scrollbarens "thumb" */
+    background-color: #ccc; /* Hvid farve på scrollbarens "thumb" */
     border-radius: 10px; /* Rundede hjørner på scrollbarens "thumb" */
   }
 
   .vine-container::-webkit-scrollbar-thumb:hover {
-    background-color: #ffffff; /* Hvid farve på scrollbarens "thumb" */
+    background-color: #888; /* Hvid farve på scrollbarens "thumb" */
     border-radius: 10px; /* Rundede hjørner på scrollbarens "thumb" */
   }
 
 .vine-container {
   width: 100%;
   overflow: auto; /* Gør det muligt at scrolle horisontalt */
+  overflow-y: hidden; /* Forhindrer vertikal scrollbar, da vi kun vil have horisontal scrolling */
 }
 
 /* Scrollbar i slideren */
@@ -52,7 +54,65 @@
   width: fit-content; /* Gør at scrollbarens bredde tilpasses indholdet */
   align-items: center;
   justify-content: center; /* Centrerer indholdet i scrollbar */
-  gap: 40px; /* Giver luft mellem vinene */
   overflow-x: auto; /* Gør det muligt at scrolle horisontalt */
-  margin: auto; 
+  overflow-y: hidden; /* Forhindrer vertikal scrollbar, da vi kun vil have horisontal scrolling */
 }
+
+.slide {
+  width: 400px; /* Fast bredde på hver vin for at sikre ensartet størrelse */
+  flex-shrink: 0; /* Forhindrer at vinen skaleres ned, når der er for mange i slideren */
+  margin-bottom: 20px; /* Margin under hver vin for at skabe luft *
+  display: flex; /* Flexbox for at arrangere indholdet i hver vin */
+  flex-direction: column; /* Kolonne for at arrangere billede og tekst vertikalt */
+  justify-content: center; /* Centrerer indholdet vertikalt */
+  align-items: center; /* Centrerer indholdet horisontalt */
+}
+
+.slide h5 {
+  margin-top: 5px; /* Margin rundt om produktnavnet for at skabe luft */
+  margin-bottom: 30px;
+  max-width: 12ch; /* Maksimal bredde så produktnavnene står på mere end en linje, så de står lige under den tilhørende vin */
+  text-align: center; /* Centrerer produktnavnet */
+}
+
+.slide:hover {
+  transform: scale(1.03); /* Forstørrer vinen en smule ved hover for at give en visuel effekt */
+  transition: transform 0.3s ease; /* Gør overgangen glidende */
+}
+
+.slide img {
+  width: 100%; /* Billedet fylder hele bredden af sin container */
+  height: auto; /* Højden justeres automatisk for at bevare proportionerne */
+  display: block; /* Fjerner eventuelt mellemrum under billedet */
+}
+
+.scrollbar {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+  
+  h5 {
+    font-size: 18pt; /* Størrelse på produktnavnene i slideren */
+    font-weight: normal; /* Normal vægt for produktnavnene */
+    margin-top: 10px; /* Margin over produktnavnene for at skabe luft */
+  }
+
+/* Brandhistorie-tekst */
+
+.brandhistorie {
+    display: flex; /* Flexbox bruges for at centrere hele introsektionen på siden */
+    flex-direction: column; /* Kolonne så overskrift og tekst vises vertikalt i stedet for horisontalt */
+    align-items: center; /* Centrerer indholdet på siden */
+    margin-bottom: 50px; /* For at skabe luft mellem introteksten og den nedenstående sektion */
+  }
+  
+  .brandhistorie h2 {
+    text-align: center; /* Centrerer hovedoverskriften */
+    max-width: 12ch; /* Maksimalt antal anslag for at sørge for, overskriften deler sig på to linjer frem for at blive for lang. Dette giver et mere læsevenligt layout. */
+  }
+  
+  .brandhistorie p {
+    text-align: left; /* Brødteksten er venstrestillet for at gøre den nemmere at læse */
+    max-width: 42ch; /* Maksimalt antal anslag for at holde brødteksten på ca. 60 anslag inkl. mellemrum for at forbedre læsbarheden */
+  }
