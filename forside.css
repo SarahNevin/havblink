@@ -1,3 +1,4 @@
+
 /* Hero-billede */
 
 .hero-billede {
@@ -11,15 +12,23 @@
     display: block; /* Fjerner eventuelt mellemrum under billedet */
   }
 
+  .hero-billede {
+    overflow-x: hidden; /* Forhindrer der kommer en horisontal scrollbar, hvis indholdet strækker sig længere end bredden på viewportern */
+}
+
 /* Slider med vine */
+
+.vine-overskrift {
+    margin-left: 50px; /* Margin til venstre for at give luft mellem overskriften og venstre kant af viewporten */
+    margin-bottom: -40px; /* Negativ margin for at skabe mindre afstand ned til slideren, så det er mere tydeligt overskriften hører til der.*/
+  }
 
 .vine-container {
     display: flex; /* Flexbox for at arrangere vinene i en række */
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Højden på containeren er 100% af viewportens højde */
-    overflow: hidden; /* Forhindrer at indholdet strækker sig uden for containerens bredde */
-    overflow-y: hidden; /* Forhindrer vertikal scrollbar, da vi kun vil have horisontal scrolling */
+    margin-bottom: 30px; /* Margin under slideren for at skabe luft */
+    padding: 30px; /* Padding omkring slideren for at skabe luft */
   }
 
   .vine-container::-webkit-scrollbar {
@@ -43,7 +52,6 @@
 
 .vine-container {
   width: 100%;
-  overflow: auto; /* Gør det muligt at scrolle horisontalt */
   overflow-y: hidden; /* Forhindrer vertikal scrollbar, da vi kun vil have horisontal scrolling */
 }
 
@@ -51,9 +59,9 @@
 
 .scrollbar {
   display: flex;
-  width: fit-content; /* Gør at scrollbarens bredde tilpasses indholdet */
+  min-width: 100%;
   align-items: center;
-  justify-content: center; /* Centrerer indholdet i scrollbar */
+  justify-content: start; /* Justerer indholdet til venstre i slideren */
   overflow-x: auto; /* Gør det muligt at scrolle horisontalt */
   overflow-y: hidden; /* Forhindrer vertikal scrollbar, da vi kun vil have horisontal scrolling */
 }
@@ -61,17 +69,18 @@
 .slide {
   width: 400px; /* Fast bredde på hver vin for at sikre ensartet størrelse */
   flex-shrink: 0; /* Forhindrer at vinen skaleres ned, når der er for mange i slideren */
-  margin-bottom: 20px; /* Margin under hver vin for at skabe luft *
+  margin-bottom: 20px; /* Margin under hver vin for at skabe luft */
   display: flex; /* Flexbox for at arrangere indholdet i hver vin */
   flex-direction: column; /* Kolonne for at arrangere billede og tekst vertikalt */
   justify-content: center; /* Centrerer indholdet vertikalt */
   align-items: center; /* Centrerer indholdet horisontalt */
+  scroll-snap-align: start; /* Sørger for at hver vin starter ved begyndelsen af viewporten, når der scrollet */
 }
 
 .slide h5 {
   margin-top: 5px; /* Margin rundt om produktnavnet for at skabe luft */
   margin-bottom: 30px;
-  max-width: 12ch; /* Maksimal bredde så produktnavnene står på mere end en linje, så de står lige under den tilhørende vin */
+  max-width: 15ch; /* Maksimal bredde så produktnavnene står på mere end en linje, så de står lige under den tilhørende vin */
   text-align: center; /* Centrerer produktnavnet */
 }
 
@@ -91,12 +100,7 @@
   padding-bottom: 30px;
   margin-bottom: 20px;
 }
-  
-  h5 {
-    font-size: 18pt; /* Størrelse på produktnavnene i slideren */
-    font-weight: normal; /* Normal vægt for produktnavnene */
-    margin-top: 10px; /* Margin over produktnavnene for at skabe luft */
-  }
+
 
 /* Brandhistorie-tekst */
 
