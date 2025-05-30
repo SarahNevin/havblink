@@ -1,3 +1,5 @@
+/* Hero-billede */
+
 .hero-billede {
     max-width: 100%; /* Maksimal bredde tilføjet for at forhindre, containeren fylder mere end hele viewportens bredde */
     overflow: hidden; /* Forhindrer at billedet strækker sig uden for containerens bredde */
@@ -8,3 +10,49 @@
     height: auto; /* Højden justeres automatisk, så billedets proportioner bliver holdt */
     display: block; /* Fjerner eventuelt mellemrum under billedet */
   }
+
+/* Slider med vine */
+
+.vine-container {
+    display: flex; /* Flexbox for at arrangere vinene i en række */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Højden på containeren er 100% af viewportens højde */
+    overflow: hidden; /* Forhindrer at indholdet strækker sig uden for containerens bredde */
+  }
+
+  .vine-container::-webkit-scrollbar {
+    height: 7px; /* Højden på scrollbar sættes til 0 for at skjule den */
+  }
+
+  .vine-container::-webkit-scrollbar-track {
+    background: none; /* Ingen baggrund på scrollbarens track */
+    border-radius: 10px; /* Rundede hjørner på scrollbarens track */
+  }
+
+  .vine-container::-webkit-scrollbar-thumb {
+    background-color: #fefefe; /* Hvid farve på scrollbarens "thumb" */
+    border-radius: 10px; /* Rundede hjørner på scrollbarens "thumb" */
+  }
+
+  .vine-container::-webkit-scrollbar-thumb:hover {
+    background-color: #ffffff; /* Hvid farve på scrollbarens "thumb" */
+    border-radius: 10px; /* Rundede hjørner på scrollbarens "thumb" */
+  }
+
+.vine-container {
+  width: 100%;
+  overflow: auto; /* Gør det muligt at scrolle horisontalt */
+}
+
+/* Scrollbar i slideren */
+
+.scrollbar {
+  display: flex;
+  width: fit-content; /* Gør at scrollbarens bredde tilpasses indholdet */
+  align-items: center;
+  justify-content: center; /* Centrerer indholdet i scrollbar */
+  gap: 40px; /* Giver luft mellem vinene */
+  overflow-x: auto; /* Gør det muligt at scrolle horisontalt */
+  margin: auto; 
+}
