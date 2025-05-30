@@ -116,6 +116,7 @@
 .vinflaske-billede {
   grid-area: vinflaske-billede;
   display: flex;
+  width: 100%; /* Billedet fylder hele bredden af sin grid-celle */
 }
 
 .smagsprofil {
