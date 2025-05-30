@@ -5,6 +5,8 @@
 .header {
   background-color: #3C511B; /* Mørk olivengrøn baggrund */
   position: sticky; /* Gør headeren sticky så den bliver på skærmen, når man scroller */
+  top: 0; /* Placerer headeren øverst på siden */
+  z-index: 1000; /* Sørger for at headeren ligger over andre elementer på siden */
   display: flex; /* Flexbox for at få logo og navigationsmenu opdelt horisontalt */
   align-items: center; /* Centrerer indholdet i headeren */
   justify-content: space-between; /* Fordeler pladsen i flexbox, så logo er til venstre og navigationsmenu til højre */
