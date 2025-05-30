@@ -222,4 +222,51 @@
   display: block;
 }
 
+/* footer */
+.footer {
+  background-color: #3C511B;
+  height: 300px; /* Højden på footer */
+  color: #fefefe;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px; /* Padding for at skabe luft mellem elementerne og footerens kanter */
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer h3 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.footer p, .footer a {
+  color: #fefefe;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #B06821; /* varm orange farve ved hover for at matche øvrige hover-styles */
+}
+
+.footer .nyhedsbrev form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.footer .some-ikoner {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer .some-ikoner img {
+  width: 50px;
+  height: 50px;
+}
+
+.footer .nyhedsbrev .button {
+  padding: 0.5rem 1rem;
+  color: #fefefe;
+}
 
