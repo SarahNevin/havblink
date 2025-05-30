@@ -35,12 +35,12 @@ h3 {
 }
 
 h4 {
-  font-size: 20pt; /* Overskrifter i footer */
-  margin-bottom: 0.5rem; /* Afstand under footer-overskrifter */
+  font-size: 18pt; /* Overskrifter i footer */
+  margin-bottom: 10px; /* Afstand under footer-overskrifter */
 }
 
 h5 {
-    font-size: 18pt; /* Produktnavn på forside */
+    font-size: 16pt; /* Produktnavn på forside */
   }
 
 p {
@@ -53,13 +53,6 @@ p a {
   color: #2B2B2B; /* Samme farve som den øvrige brødtekst */
   font-weight: bold; /* Fed skrift for at fremhæve links */
 }
-
-  /* Undgå horisontal scrollbar */
-
-  body {
-    overflow-x: hidden; /* Forhindrer der kommer en horisontal scrollbar, hvis indholdet strækker sig længere end bredden på viewportern */
-}
-
 
 /* Introtekst */
 
