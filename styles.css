@@ -135,17 +135,15 @@ a.button:hover {
 }
 
   .intro {
-    padding: 0 20px; /* Indvendig margen for bedre afstand på små skærme */
+    padding: 0 20px; /* Indvendig margin for bedre afstand på små skærme */
     margin-bottom: 40px;
   }
 
   .intro h1 {
-    max-width: 100%; /* Tillad overskriften at fylde mere */
-    font-size: 36pt; /* Reduceret størrelse */
+    font-size: 36pt;
   }
 
   .intro p {
-    max-width: 100%;
     font-size: 15px;
   }
 
