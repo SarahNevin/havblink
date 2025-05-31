@@ -101,6 +101,27 @@
   margin-bottom: 20px;
 }
 
+.pil {
+  font-size: 30px; /* Størrelse på pilene */
+  cursor: pointer; /* Skifter markøren til en hånd ved hover for at vise, at pilene skulle være klikbare for dermed at gøre designet mere brugervenligt og intuitivt. (Dette virker selvfølgelig ikke grundet manglende javascript, men blot for at illustrere, hvordan det skulle fungere). */
+  padding: 10px;  
+  position: absolute; /* Absolut positionering anvendes for at placere pilene inden i slideren */
+  border: none; /* Ingen kant rundt om pilene */
+  background: transparent; /* Gennemsigtig baggrund, så der ikke er en grim default-baggrund bag pilene */
+}
+
+.venstre {
+  left: 10px;
+}
+
+.hoejre {
+  right: 10px;
+}
+
+.vine-container {
+  position: relative; /* Nødvendigt for at positionere pilene tæt ved containeren */
+}
+
 
 /* Brandhistorie-tekst */
 
