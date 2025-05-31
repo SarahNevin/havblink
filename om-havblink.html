@@ -10,14 +10,114 @@
     <link rel="stylesheet" href="https://use.typekit.net/zyo0gxk.css">
 </head>
 <body>
+ <header class="header">
+    <div class="logo">
+        <a href="/">
+        <img src="images/havblink-hvidvin-logo-hvidt.svg" alt="Havblink Hvidvin logo">
+        </a>
+    </div>
+
+    <!-- Navigation til desktop -->
+    <div id="navigation-desktop">
+        <nav>
+            <ul class="navigationsmenu">
+            <li class="dropdown-menu"><a href="#">Vine &#9662;</a>
+                <ul class="dropdown-undersider længere-boks">
+                <li><a href="vores-vine">Vores vine</a></li>
+                <li><a href="dansk-hvidvin">Hvorfor dansk vin?</a></li>
+                <li><a href="#">Gaveidéer</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Webshop</a></li>
+            <li class="dropdown-menu active"><a href="#">Om os &#9662;</a>
+                <ul class="dropdown-undersider">
+                <li class="active"><a href="om-havblink">Om Havblink</a></li>
+                <li><a href="#">Anmeldelser</a></li>
+                <li><a href="#">Galleri</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Presse</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-menu"><a href="#">Bæredygtighed &#9662;</a>
+                <ul class="dropdown-undersider længere-boks">
+                <li><a href="vin-med-omtanke">Vin med omtanke</a></li>
+                <li><a href="#">Økologisk vinavl</a></li>
+                <li><a href="#">Fra drue til flaske</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-menu"><a href="#">Besøg os &#9662;</a>
+                <ul class="dropdown-undersider">
+                <li><a href="vinsmagning-havblink-vingaard">Vinsmagning</a></li>
+                <li><a href="#">Kalender</a></li>
+                <li><a href="#">Gårdbutik</a></li>
+                <li><a href="#">Åbningstider</a></li>
+                </ul>
+            </li>
+            </ul>
+        </nav>
+     </div>
+
+        <!-- Responsiv navigation med burgermenu -->
+        <div class="mobilmenu">
+        <input type="checkbox" id="mobilmenu-toggle">
+        <label for="mobilmenu-toggle" class="burgerikon">&#9776;</label>
+        <label for="mobilmenu-toggle" class="luk">&#10005;</label>
+
+        <nav id="navigation-mobil" class="dropdown-mobil">
+            <ul>
+            <li>
+                <label for="toggle-vine">Vine &#9662;</label>
+                <input type="checkbox" id="toggle-vine">
+                <ul class="mobil-undersider">
+                <li><a href="vores-vine">Vores vine</a></li>
+                <li><a href="dansk-hvidvin">Hvorfor dansk vin?</a></li>
+                <li><a href="#">Gaveidéer</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Webshop</a></li>
+            <li>
+                <label for="toggle-omos">Om os &#9662;</label>
+                <input type="checkbox" id="toggle-omos">
+                <ul class="mobil-undersider">
+                <li><a href="om-havblink">Om Havblink</a></li>
+                <li><a href="#">Anmeldelser</a></li>
+                <li><a href="#">Galleri</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Presse</a></li>
+                </ul>
+            </li>
+            <li>
+                <label for="toggle-baeredygtighed">Bæredygtighed &#9662;</label>
+                <input type="checkbox" id="toggle-baeredygtighed">
+                <ul class="mobil-undersider">
+                <li><a href="vin-med-omtanke">Vin med omtanke</a></li>
+                <li><a href="#">Økologisk vinavl</a></li>
+                <li><a href="#">Fra drue til flaske</a></li>
+                </ul>
+            </li>
+            <li>
+                <label for="toggle-besoeg">Besøg os &#9662;</label>
+                <input type="checkbox" id="toggle-besoeg">
+                <ul class="mobil-undersider">
+                <li><a href="vinsmagning-havblink-vingaard">Vinsmagning</a></li>
+                <li><a href="#">Kalender</a></li>
+                <li><a href="#">Gårdbutik</a></li>
+                <li><a href="#">Åbningstider</a></li>
+                </ul>
+            </li>
+            </ul>
+        </nav>
+        </div>
+  </header>
+
     <main>
         <section class="intro">
             <h1>Om Havblink: Vores vinrejse</h1>
             <p>Som ægtepar har vi, Flemming og Henriette, forvandlet en gammel kirsebærplantage i Skårup til Havblink Hvidvin.</p>
             <br>
-            <p>Kun en kilometer fra Lillebælt og Det Sydfynske Øhav har vi i dag 2.000 vinstokke på 0,8 hektar under skrappe økologiske krav.</p>
+            <p>Kun en kilometer fra Lillebælt og Det Sydfynske Øhav dyrker vi 2.500 økologiske vinstokke på 0,8 hektar.</p>
             <br>
-            <p>Vores Solaris har vundet <strong>Årets Danske Hvidvin</strong> i 2018, 2020, 2022 og 2023 og bekræfter vores passion og omhu.</p>
+            <p>Vores Solaris er kåret som Årets Danske Hvidvin hele 4 gange – et tydeligt bevis på vores dedikation og håndværk.</p>
         </section> 
         
         <section class="artikel">
@@ -30,23 +130,23 @@
                 <p>Selvom det startede med en fiasko, havde vi en stærk tro på, at dansk hvidvin stod på tærsklen til et kommercielt gennembrud. Vi plantede endnu 1.000 stokke i 2014, heldigvis med noget større succes. I dag har vi 2.500 vinstokke og er registreret som <strong>økologisk vingård.</strong></p>
                 <br>
                 <h2>Klimaet ændrer alt</h2>
-                <p>Vi bliver ofte spurgt, om man virkelig kan lave god hvidvin i Danmark. Til det kan vi svare et rungende ja! Med flere solskinstimer og stigende middeltemperaturer modnes druerne nemlig bedre end nogensinde.</p>
+                <p>Vi bliver ofte spurgt, om man kan lave god vin i Danmark. Til det kan vi svare et rungende ja! Med flere solskinstimer og stigende temperaturer modnes druerne nemlig bedre end nogensinde.</p>
                 <br>
-                <p>Det sydfynske mikroklima med havets lunende effekt skaber unikke betingelser. Det giver os mulighed for at lave elegante, tørre hvidvine med frugt og finesse, uden at gå på kompromis med naturen.</p>
+                <p>Det sydfynske mikroklima med havets lunende effekt skaber unikke betingelser. Det giver os mulighed for at skabe elegante hvidvine, der fuldt ud kan måle sig med vine fra kendte vinlande.</p>
             </div>
         </section>
 
         <section class="artikel artikel-billede-højre">
             <div class="artikel-tekst">
                 <h2>Om os og vores marker</h2>
-                <p>Vi dyrker fire druesorter: Solaris, Muscaris, Ortega og Madeleine Angevine. De har alle gode smagskvaliteter og passer godt til det danske klima og økologisk produktion.</p>
+                <p>Vi dyrker 5 druesorter: Solaris, Muscaris, Ortega, Johanniter og Madeleine Angevine. De har alle gode smagskvaliteter og passer godt til det danske klima og vores økologiske tilgang.</p>
                 <br>
                 <p>Varmen fra vores nabo Lillebælt forlænger vækstsæsonen, og de mange solskinstimer giver druer med ekstra smag. På de 2.500 stokke høster vi årligt druer til et par tusinde flasker på <a href="vin-med-omtanke">bæredygtig vis.</a></p>
                 <br>
                 <h2>Håndkraft og økologi</h2>
                 <p>Alle arbejdsopgaver fra beskæring til høst udføres ved håndkraft. Vi undgår sprøjtemidler så vidt muligt og lader græs og vilde blomster gro mellem rækkerne for at styrke biodiversiteten.</p>
                 <br>
-                <p>Mange timers omhyggeligt markarbejde sikrer sunde druer og mindre indgriben. Det er denne metode, der giver vores vine deres tydelige karakter og bæredygtige aftryk.</p>
+                <p>Det kræver mange timer i marken, men sikrer sunde og aromatiske druer. Det er denne metode, der giver vores vine deres tydelige karakter og bæredygtige aftryk.</p>
             </div>
 
             <img src="images/havblink-gaarden-sydfyn.jpg" alt="Havblink Hvidvin – vingården" class="artikel-billede">
@@ -57,15 +157,18 @@
 
             <div class="artikel-tekst">
                 <h2>Prisvindende Solaris</h2>
-                <p><a href="solaris-2023">Vores Solaris-vine</a> har gentagne gange scoret topanmeldelser og er kåret til Årets Danske Hvidvin fire gange siden 2018.</p>
+                <p><a href="solaris-2023">Vores Solaris-vine</a> har gentagne gange scoret topanmeldelser og er kåret til Årets Danske Hvidvin i 2018, 2020, 2022 og 2023.</p>
                 <br>
                 <p>Druen modner tidligt og er modstandsdygtig over for sygdomme, hvilket passer perfekt til vores økologiske principper.</p>
-                <p>Solaris står for 45% af al dansk hvidvinsproduktion (2023), og vi er stolte over at bidrage til den nationale vækst i vinproduktion.</p>
+                <br>
+                <p>Solaris står for 45% af al dansk hvidvinsproduktion (2023), og vi er stolte af at være med til at sætte Danmark på vinkortet.</p>
                 <br>
                 <h2>Besøg og oplevelser</h2>
-                <p>I vores gårdbutik inviterer vi på vinsmagsprøver og fortællinger om vingårdens historie. Du kan også købe delikatesser fra andre af de lokale producenter af fx bær, frugter og honning.</p>
+                <p>I vores gårdbutik inviterer vi på vinsmagsprøver og fortællinger om vores rejse fra hobbyforetagende til prisvindende vingård.</p>
                 <br>
-                <p>Du kan booke en <a href="vinsmagning">rundvisning og vinsmagning</a> hele året, evt. sammen med en 3-retters sæsonbestemt middag.</p>
+                <p>Du kan naturligvis købe alle vores hvidvine, men også delikatesser fra andre lokale producenter af fx bær, frugter og honning.</p>
+                <br>
+                <p>Du kan også booke en <a href="vinsmagning">rundvisning og vinsmagning</a>, evt. sammen med en 3-retters sæsonbestemt middag baseret på lokale råvarer.</p>
             </div>
         </section>
 
@@ -75,6 +178,44 @@
 
     </main>
 
-    
+    <footer class="footer">
+      <div class="footer-sektion">
+            <h4>ADRESSE</h4>
+            <p>Havblink Hvidvin<br>
+            Kystagervej 12<br>
+            5881 Skårup<br>
+            Danmark</p>
+        </div>
+
+        <div class="footer-sektion">
+            <h4>ÅBNINGSTIDER</h4>
+            <p><strong>Gårdbutikken:</strong><br>
+            Mandag: 11-15<br>
+            Tirsdag: 11-15<br>
+            Onsdag: 11-15<br>
+            Torsdag: 11-15<br>
+            Fredag: 11-15</p>
+        </div>
+
+        <div class="footer-sektion nyhedsbrev">
+            <h4>TILMELD DIG VORES NYHEDSBREV</h4>
+            <form>
+            <input type="email" placeholder="E-MAIL">
+            <a href="#" class="button">TILMELD</a> <!-- Knap til tilmelding af nyhedsbrev. Lavet som et link frem for <button> for at undgå javascript. -->
+            </form>
+        </div>
+
+        <div class="footer-sektion">
+            <h4>KONTAKT</h4>
+            <p>Telefon: 71 99 03 26<br>
+            E-mail: <a href="mailto:kontakt@havblink.dk">kontakt@havblink.dk</a><br>
+            <a href="vinsmagning-havblink-vingaard">Book vinsmagning</a></p>
+            <div class="some-ikoner">
+            <a href="#"><img src="images/facebook-logo.svg" alt="Vores Facebook"></a>
+            <a href="#"><img src="images/instagram-logo.svg" alt="Vores Instagram"></a>
+            </div>
+        </div>
+    </footer>
+ 
 </body>
 </html>

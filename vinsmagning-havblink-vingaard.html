@@ -9,10 +9,108 @@
     <link rel="stylesheet" href="produktoversigt.css">
     <link rel="stylesheet" href="https://use.typekit.net/zyo0gxk.css">
 </head>
-<body>
-    <header>
 
-    </header>
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="/">
+       <img src="images/havblink-hvidvin-logo-hvidt.svg" alt="Havblink Hvidvin logo">
+      </a>
+    </div>
+
+    <!-- Navigation til desktop -->
+    <div id="navigation-desktop">
+      <nav>
+        <ul class="navigationsmenu">
+          <li class="dropdown-menu"><a href="#">Vine &#9662;</a>
+            <ul class="dropdown-undersider længere-boks">
+              <li><a href="vores-vine">Vores vine</a></li>
+              <li><a href="dansk-hvidvin">Hvorfor dansk vin?</a></li>
+              <li><a href="#">Gaveidéer</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Webshop</a></li>
+          <li class="dropdown-menu"><a href="#">Om os &#9662;</a>
+            <ul class="dropdown-undersider">
+              <li><a href="om-havblink">Om Havblink</a></li>
+              <li><a href="#">Anmeldelser</a></li>
+              <li><a href="#">Galleri</a></li>
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="#">Presse</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-menu"><a href="#">Bæredygtighed &#9662;</a>
+            <ul class="dropdown-undersider længere-boks">
+              <li><a href="vin-med-omtanke">Vin med omtanke</a></li>
+              <li><a href="#">Økologisk vinavl</a></li>
+              <li><a href="#">Fra drue til flaske</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-menu active"><a href="#">Besøg os &#9662;</a>
+            <ul class="dropdown-undersider">
+              <li class="active"><a href="vinsmagning-havblink-vingaard">Vinsmagning</a></li>
+              <li><a href="#">Kalender</a></li>
+              <li><a href="#">Gårdbutik</a></li>
+              <li><a href="#">Åbningstider</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Responsiv navigation med burgermenu -->
+    <div class="mobilmenu">
+      <input type="checkbox" id="mobilmenu-toggle">
+      <label for="mobilmenu-toggle" class="burgerikon">&#9776;</label>
+      <label for="mobilmenu-toggle" class="luk">&#10005;</label>
+
+      <nav id="navigation-mobil" class="dropdown-mobil">
+        <ul>
+          <li>
+            <label for="toggle-vine">Vine &#9662;</label>
+            <input type="checkbox" id="toggle-vine">
+            <ul class="mobil-undersider">
+              <li><a href="vores-vine">Vores vine</a></li>
+              <li><a href="dansk-hvidvin">Hvorfor dansk vin?</a></li>
+              <li><a href="#">Gaveidéer</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Webshop</a></li>
+          <li>
+            <label for="toggle-omos">Om os &#9662;</label>
+            <input type="checkbox" id="toggle-omos">
+            <ul class="mobil-undersider">
+              <li><a href="om-havblink">Om Havblink</a></li>
+              <li><a href="#">Anmeldelser</a></li>
+              <li><a href="#">Galleri</a></li>
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="#">Presse</a></li>
+            </ul>
+          </li>
+          <li>
+            <label for="toggle-baeredygtighed">Bæredygtighed &#9662;</label>
+            <input type="checkbox" id="toggle-baeredygtighed">
+            <ul class="mobil-undersider">
+              <li><a href="vin-med-omtanke">Vin med omtanke</a></li>
+              <li><a href="#">Økologisk vinavl</a></li>
+              <li><a href="#">Fra drue til flaske</a></li>
+            </ul>
+          </li>
+          <li>
+            <label for="toggle-besoeg">Besøg os &#9662;</label>
+            <input type="checkbox" id="toggle-besoeg">
+            <ul class="mobil-undersider">
+              <li><a href="vinsmagning-havblink-vingaard">Vinsmagning</a></li>
+              <li><a href="#">Kalender</a></li>
+              <li><a href="#">Gårdbutik</a></li>
+              <li><a href="#">Åbningstider</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
 
     <main>
         <section class="intro">
@@ -29,9 +127,9 @@
             
             <div class="produktbeskrivelse">
                 <h2>Vinsmagning med rundvisning</h2>
-                <p>Kom med en tur i vinmarken, og hør om druerne, dyrkningsmetoderne og vores økologiske tilgang til produktionen.</p>
+                <p>Kom med en tur i vinmarken og oplev, hvordan vores økologiske hvidvine bliver til. Undervejs fortæller vi om druesorterne, dyrkningsmetoderne og vores <a href="vin-med-omtanke."> bæredygtige tilgang</a> til vinproduktion.</p>
                 <br>
-                <p>Rundvisningen foregår i et roligt tempo med plads til spørgsmål, efterfulgt af en smagning af vores 5 hvidvine.</p>
+                <p>Rundvisningen foregår i et roligt tempo med plads til spørgsmål. Efterfølgende byder vi på af en smagning af vores 5 hvidvine med hver sin karakter og fortælling.</p>
                 <a href="#" class="button knap-produktside">BOOK NU</a> <!-- Tiltænkt som en knap, der fører til kalenderen med mulighed for booking. Lavet som et link frem for <button> for at undgå javascript. -->
 
             </div>
@@ -40,7 +138,7 @@
         <section class="produktoversigt produktbillede-højre">
             <div class="produktbeskrivelse">
                 <h2>Vinsmagning med 3-retters middag</h2>
-                <p>Kombiner vinsmagningen med en 3-retter menu baseret på årstidens råvarer. Under middagen præsenterer vi vores hvidvine, som maden er nøje udvalgt til.</p>
+                <p>Kombiner vinsmagningen med en 3-retter menu baseret på årstidens lokale råvarer. Under middagen præsenterer vi vores økologiske hvidvine, som maden er nøje udvalgt til at spille sammen med.</p>
                 <br>
                 <p>Vi giver naturligvis også en rundvisning og fortæller om årets gang på vingården.</p>
                 <a href="#" class="button knap-produktside">BOOK NU</a>
@@ -58,15 +156,54 @@
                 <h2>Privat vinsmagning</h2>
                 <p>Er I en gruppe på minimum 8 personer, tilbyder vi en privat rundvisning med vinsmagning.</p>
                 <br>
-                <p>Det er også muligt at booke en skræddersyet oplevelse til jeres bryllup, firmaevent eller noget helt tredje.</p>
+                <p>Vi skræddersyr også gerne oplevelsen efter jeres ønsker, hvad end det gælder et bryllup, firmaarrangement eller noget helt tredje.</p>
                 <br>
-                <p><a href="mailto:info@havblink.dk?subject=Forespørgsel%20om%20privat%20event">Send os en mail</a> med jeres ønsker til jeres arrangement.</p>
+                <p><a href="mailto:info@havblink.dk?subject=Forespørgsel%20om%20privat%20event">Send os en mail</a> med jeres idéer og behov, så finder vi sammen frem til den rette ramme for jeres event.</p>
             </div>
         </section>
         
         <div class="centrer-knap"> <!-- Container for at få knappen til at være midt på siden. -->
          <a href="#" class="button">TIL TOPPEN</a> <!-- Knap til toppen af siden. Lavet som et link frem for <button> for at undgå javascript. -->
         </div>
+
+ <footer class="footer">
+   <div class="footer-sektion">
+     <h4>ADRESSE</h4>
+     <p>Havblink Hvidvin<br>
+      Kystagervej 12<br>
+      5881 Skårup<br>
+      Danmark</p>
+   </div>
+
+   <div class="footer-sektion">
+     <h4>ÅBNINGSTIDER</h4>
+     <p><strong>Gårdbutikken:</strong><br>
+      Mandag: 11-15<br>
+      Tirsdag: 11-15<br>
+      Onsdag: 11-15<br>
+      Torsdag: 11-15<br>
+      Fredag: 11-15</p>
+   </div>
+
+   <div class="footer-sektion nyhedsbrev">
+     <h4>TILMELD DIG VORES NYHEDSBREV</h4>
+     <form>
+      <input type="email" placeholder="E-MAIL">
+      <a href="#" class="button">TILMELD</a> <!-- Knap til tilmelding af nyhedsbrev. Lavet som et link frem for <button> for at undgå javascript. -->
+     </form>
+   </div>
+
+   <div class="footer-sektion">
+     <h4>KONTAKT</h4>
+     <p>Telefon: 71 99 03 26<br>
+      E-mail: <a href="mailto:kontakt@havblink.dk">kontakt@havblink.dk</a><br>
+      <a href="vinsmagning-havblink-vingaard">Book vinsmagning</a></p>
+     <div class="some-ikoner">
+       <a href="#"><img src="images/facebook-logo.svg" alt="Vores Facebook"></a>
+       <a href="#"><img src="images/instagram-logo.svg" alt="Vores Instagram"></a>
+     </div>
+   </div>
+ </footer>
 
     </main>
 
