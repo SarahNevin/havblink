@@ -10,6 +10,106 @@
     <link rel="stylesheet" href="https://use.typekit.net/zyo0gxk.css">
 </head>
 <body>
+ <header class="header">
+    <div class="logo">
+      <a href="/">
+       <img src="images/havblink-hvidvin-logo-hvidt.svg" alt="Havblink Hvidvin logo">
+      </a>
+    </div>
+
+    <!-- Navigation til desktop -->
+    <div id="navigation-desktop">
+      <nav>
+        <ul class="navigationsmenu">
+          <li class="dropdown-menu"><a href="#">Vine &#9662;</a>
+            <ul class="dropdown-undersider længere-boks">
+              <li><a href="vores-vine">Vores vine</a></li>
+              <li><a href="dansk-hvidvin">Hvorfor dansk vin?</a></li>
+              <li><a href="#">Gaveidéer</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Webshop</a></li>
+          <li class="dropdown-menu"><a href="#">Om os &#9662;</a>
+            <ul class="dropdown-undersider">
+              <li><a href="om-havblink">Om Havblink</a></li>
+              <li><a href="#">Anmeldelser</a></li>
+              <li><a href="#">Galleri</a></li>
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="#">Presse</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-menu active"><a href="#">Bæredygtighed &#9662;</a>
+            <ul class="dropdown-undersider længere-boks">
+              <li class="active"><a href="vin-med-omtanke">Vin med omtanke</a></li>
+              <li><a href="#">Økologisk vinavl</a></li>
+              <li><a href="#">Fra drue til flaske</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-menu"><a href="#">Besøg os &#9662;</a>
+            <ul class="dropdown-undersider">
+              <li><a href="vinsmagning-havblink-vingaard">Vinsmagning</a></li>
+              <li><a href="#">Kalender</a></li>
+              <li><a href="#">Gårdbutik</a></li>
+              <li><a href="#">Åbningstider</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Responsiv navigation med burgermenu -->
+    <div class="mobilmenu">
+      <input type="checkbox" id="mobilmenu-toggle">
+      <label for="mobilmenu-toggle" class="burgerikon">&#9776;</label>
+      <label for="mobilmenu-toggle" class="luk">&#10005;</label>
+
+      <nav id="navigation-mobil" class="dropdown-mobil">
+        <ul>
+          <li>
+            <label for="toggle-vine">Vine &#9662;</label>
+            <input type="checkbox" id="toggle-vine">
+            <ul class="mobil-undersider">
+              <li class="active"><a href="vores-vine">Vores vine</a></li>
+              <li class="active"><a href="dansk-hvidvin">Hvorfor dansk vin?</a></li>
+              <li><a href="#">Gaveidéer</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Webshop</a></li>
+          <li>
+            <label for="toggle-omos">Om os &#9662;</label>
+            <input type="checkbox" id="toggle-omos">
+            <ul class="mobil-undersider">
+              <li><a href="om-havblink">Om Havblink</a></li>
+              <li><a href="#">Anmeldelser</a></li>
+              <li><a href="#">Galleri</a></li>
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="#">Presse</a></li>
+            </ul>
+          </li>
+          <li>
+            <label for="toggle-baeredygtighed">Bæredygtighed &#9662;</label>
+            <input type="checkbox" id="toggle-baeredygtighed">
+            <ul class="mobil-undersider">
+              <li><a href="vin-med-omtanke">Vin med omtanke</a></li>
+              <li><a href="#">Økologisk vinavl</a></li>
+              <li><a href="#">Fra drue til flaske</a></li>
+            </ul>
+          </li>
+          <li>
+            <label for="toggle-besoeg">Besøg os &#9662;</label>
+            <input type="checkbox" id="toggle-besoeg">
+            <ul class="mobil-undersider">
+              <li><a href="vinsmagning-havblink-vingaard">Vinsmagning</a></li>
+              <li><a href="#">Kalender</a></li>
+              <li><a href="#">Gårdbutik</a></li>
+              <li><a href="#">Åbningstider</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
     <main>
         <section class="intro">
             <h1>Vin med omtanke</h1>
@@ -23,29 +123,29 @@
 
             <div class="artikel-tekst">
                 <h2>Håndplukket kvalitet</h2>
-                <p>Hver drue på Havblinks marker plukkes i hånden for at sikre perfekt modenhed og minimalt spild. Vi økosprøjter så lidt som muligt, hvilket kræver mange timer i marken. Belønningen er druer med den bedst mulige aroma, der er 100% økologiske og fri for syntetiske pesticider.</p>
+                <p>Hver drue på Havblinks marker plukkes i hånden for at sikre perfekt modenhed og minimalt spild. Vi økosprøjter så lidt som muligt, hvilket kræver mange timer i marken. Belønningen er smagfulde, 100% økologiske druer fri for syntetiske pesticider.</p>
                 <br>
-                <p>Vores tilgang giver vinene karakter og gør dem til noget særligt. Vi producerer ikke store mængder vin, men lægger al vores kærlighed i hver enkel flaske.</p>
+                <p>Vores tilgang giver vinene karakter og gør dem til noget særligt. Vi producerer ikke store mængder vin, men lægger al vores kærlighed i hver enkelt flaske.</p>
                 <br>
                 <h2>Bæredygtig vin</h2>
-                <p>Siden 2018 er har vores produktion været økologisk, og vi er meget stolte af at kunne bryste os med det danske Ø-mærke.</p>
+                <p>Siden 2018 har Havblinks produktion været økologisk, og vi er meget stolte af at kunne bryste os med det danske Ø-mærke.</p>
                 <br>
-                <p>Bæredygtighed er tænkt ind i alle de valg vi træffer. Vi dokumenterer alt fra jordbundsprøver til biodiversitet og arbejder løbende på at optimere vores druehøst, lagring og emballage.</p>
+                <p>Vi dokumenterer alt fra jordbundsprøver til biodiversitet og arbejder løbende på at optimere vores druehøst, lagring og emballage. Vores ambition er at vise, at bæredygtig vinproduktion ikke er en begrænsning, men en styrke.</p>
             </div>
         </section>
 
         <section class="artikel artikel-billede-højre">
             <div class="artikel-tekst">
                 <h2>Økologi i samspil med naturen</h2>
-                <p>Hos os på Havblink foregår vinproduktionen på naturens præmisser. I vinmarkerne får blomster og græs lov til at vokse frit mellem vinstokkene til stor glæde for bier, sommerfugle og insekter.</p>
+                <p>Hos os foregår vinproduktionen på naturens præmisser. I vinmarkerne får blomster og græs lov til at vokse frit mellem vinstokkene til stor glæde for bier, sommerfugle og insekter.</p>
                 <br>
-                <p>Druerne nyder godt af det milde kystklima og den varme, som havet bidrager med. Vestenvinden hjælper med at tørre dråberne af bladene efter regn og dug. Med en nøje tilpasset beskæring af vinrankerne får druerne både den nødvendige beskyttelse mod vejrets luner og det blide morgenlys, der modner dem nænsomt.</p>
+                <p>Druerne nyder godt af det milde kystklima og den varme, som havet bidrager med. Med en nøje beskæring af vinrankerne får druerne både den nødvendige beskyttelse mod vejrets luner og det morgenlys, der modner dem nænsomt.</p>
                 <br>
                 <h2>Lavt CO₂-aftryk</h2>
                 <br> <!-- Ekstra break for at skabe luft under 2-tallet, som går længere ned end de de andre tegn i underoverskrifterne -->
                 <p>Ved at dyrke og flaske vores vine på Sydfyn reducerer vi transporttiden og mindsker CO₂-udslippet.</p>
                 <br>
-                <p>Vores klimaaftryk er lavere end for økohvidvine, der fragtes hertil fra fx Spanien eller Frankrig. Kort vej fra jord til bord gør en mærkbar forskel.</p>
+                <p>Vi er ambitiøse med at mindske vores klimaaftryk og ser lokal produktion som en vigtig del af løsningen. Vores klimaaftryk er lavere end for økohvidvine, der fragtes hertil fra fx Spanien eller Frankrig. Kort vej fra jord til bord gør en mærkbar forskel.</p>
             </div>
 
             <img src="images/close-up-af-druer-havblink-dansk-hvidvin.jpg" alt="Havblink Hvidvin – closeup af vores økologiske, danske druer" class="artikel-billede">
@@ -57,6 +157,43 @@
 
     </main>
 
-    
+    <footer class="footer">
+        <div class="footer-sektion">
+            <h4>ADRESSE</h4>
+            <p>Havblink Hvidvin<br>
+            Kystagervej 12<br>
+            5881 Skårup<br>
+            Danmark</p>
+        </div>
+
+        <div class="footer-sektion">
+            <h4>ÅBNINGSTIDER</h4>
+            <p><strong>Gårdbutikken:</strong><br>
+            Mandag: 11-15<br>
+            Tirsdag: 11-15<br>
+            Onsdag: 11-15<br>
+            Torsdag: 11-15<br>
+            Fredag: 11-15</p>
+        </div>
+
+        <div class="footer-sektion nyhedsbrev">
+            <h4>TILMELD DIG VORES NYHEDSBREV</h4>
+            <form>
+            <input type="email" placeholder="E-MAIL">
+            <a href="#" class="button">TILMELD</a> <!-- Knap til tilmelding af nyhedsbrev. Lavet som et link frem for <button> for at undgå javascript. -->
+            </form>
+        </div>
+
+        <div class="footer-sektion">
+            <h4>KONTAKT</h4>
+            <p>Telefon: 71 99 03 26<br>
+            E-mail: <a href="mailto:kontakt@havblink.dk">kontakt@havblink.dk</a><br>
+            <a href="vinsmagning-havblink-vingaard">Book vinsmagning</a></p>
+            <div class="some-ikoner">
+            <a href="#"><img src="images/facebook-logo.svg" alt="Vores Facebook"></a>
+            <a href="#"><img src="images/instagram-logo.svg" alt="Vores Instagram"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
