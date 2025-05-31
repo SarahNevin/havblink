@@ -10,9 +10,105 @@
     <link rel="stylesheet" href="https://use.typekit.net/zyo0gxk.css">
 </head>
 <body>
-    <header>
+ <header class="header">
+    <div class="logo">
+      <a href="index.html">
+       <img src="images/havblink-hvidvin-logo-hvidt.svg" alt="Havblink Hvidvin logo">
+      </a>
+    </div>
 
-    </header>
+    <!-- Navigation til desktop -->
+    <div id="navigation-desktop">
+      <nav>
+        <ul class="navigationsmenu">
+          <li class="dropdown-menu active"><a href="#">Vine &#9662;</a>
+            <ul class="dropdown-undersider længere-boks">
+              <li class="active"><a href="vores-vine.html">Vores vine</a></li>
+              <li><a href="dansk-hvidvin.html">Hvorfor dansk vin?</a></li>
+              <li><a href="#">Gaveidéer</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Webshop</a></li>
+          <li class="dropdown-menu"><a href="#">Om os &#9662;</a>
+            <ul class="dropdown-undersider">
+              <li><a href="om-havblink.html">Om Havblink</a></li>
+              <li><a href="#">Anmeldelser</a></li>
+              <li><a href="#">Galleri</a></li>
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="#">Presse</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-menu"><a href="#">Bæredygtighed &#9662;</a>
+            <ul class="dropdown-undersider længere-boks">
+              <li><a href="vin-med-omtanke.html">Vin med omtanke</a></li>
+              <li><a href="#">Økologisk vinavl</a></li>
+              <li><a href="#">Fra drue til flaske</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-menu"><a href="#">Besøg os &#9662;</a>
+            <ul class="dropdown-undersider">
+              <li><a href="vinsmagning-havblink-vingaard.html">Vinsmagning</a></li>
+              <li><a href="#">Kalender</a></li>
+              <li><a href="#">Gårdbutik</a></li>
+              <li><a href="#">Åbningstider</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Responsiv navigation med burgermenu -->
+    <div class="mobilmenu">
+      <input type="checkbox" id="mobilmenu-toggle">
+      <label for="mobilmenu-toggle" class="burgerikon">&#9776;</label>
+      <label for="mobilmenu-toggle" class="luk">&#10005;</label>
+
+      <nav id="navigation-mobil" class="dropdown-mobil">
+        <ul>
+          <li>
+            <label for="toggle-vine">Vine &#9662;</label>
+            <input type="checkbox" id="toggle-vine">
+            <ul class="mobil-undersider">
+              <li class="active"><a href="vores-vine.html">Vores vine</a></li>
+              <li class="active"><a href="dansk-hvidvin.html">Hvorfor dansk vin?</a></li>
+              <li><a href="#">Gaveidéer</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Webshop</a></li>
+          <li>
+            <label for="toggle-omos">Om os &#9662;</label>
+            <input type="checkbox" id="toggle-omos">
+            <ul class="mobil-undersider">
+              <li><a href="om-havblink.html">Om Havblink</a></li>
+              <li><a href="#">Anmeldelser</a></li>
+              <li><a href="#">Galleri</a></li>
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="#">Presse</a></li>
+            </ul>
+          </li>
+          <li>
+            <label for="toggle-baeredygtighed">Bæredygtighed &#9662;</label>
+            <input type="checkbox" id="toggle-baeredygtighed">
+            <ul class="mobil-undersider">
+              <li><a href="vin-med-omtanke.html">Vin med omtanke</a></li>
+              <li><a href="#">Økologisk vinavl</a></li>
+              <li><a href="#">Fra drue til flaske</a></li>
+            </ul>
+          </li>
+          <li>
+            <label for="toggle-besoeg">Besøg os &#9662;</label>
+            <input type="checkbox" id="toggle-besoeg">
+            <ul class="mobil-undersider">
+              <li><a href="vinsmagning-havblink-vingaard.html">Vinsmagning</a></li>
+              <li><a href="#">Kalender</a></li>
+              <li><a href="#">Gårdbutik</a></li>
+              <li><a href="#">Åbningstider</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
     <main>
         <section class="intro">
