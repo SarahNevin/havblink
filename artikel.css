@@ -34,6 +34,7 @@
 @media (max-width: 768px) {
     .artikel {
         flex-direction: column; /* på skærme under 768px vises billede og tekst i en kolonne frem for ved siden af hinanden på en række */
+        overflow-x: hidden; /* Forhindrer horisontal scroll ved responsiv visning */
     }
     .artikel-billede,
     .artikel-tekst {
