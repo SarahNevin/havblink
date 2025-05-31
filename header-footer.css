@@ -46,6 +46,10 @@
     color: #B06821; /* varm orange farve ved hover for at gøre det tydeligt, hvad man vælger */
 }
 
+.navigationsmenu .active > a {
+  text-decoration: underline; /* Understreger det aktive menupunkt for at vise brugeren, hvilket hovedmenupunkt vedkommende er inde under for at forbedre brugeroplevelsen */
+}
+
 /* Dropdown-menuerne under navigationsmenuen */
 
 .dropdown-undersider {
