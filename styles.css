@@ -54,6 +54,10 @@ p a {
   font-weight: bold; /* Fed skrift for at fremhæve links */
 }
 
+p a:hover {
+  color: #B06821; /* Orange farve ved hover for at indikere, at det er et klikbart link */
+}
+
 /* Introtekst */
 
 .intro {
@@ -126,6 +130,10 @@ a.button:hover {
     font-size: 15px;
   }
 
+  p a:hover {
+  color: #2B2B2B; /* Samme farve som når teksten ikke er markeret, da der ikke er en hover-effekt her */
+}
+
   .intro {
     padding: 0 20px; /* Indvendig margen for bedre afstand på små skærme */
     margin-bottom: 40px;
@@ -138,7 +146,6 @@ a.button:hover {
 
   .intro p {
     max-width: 100%;
-    text-align: center; /* Midterjusteret brødtekst på mobil for visuelt bedre balance */
     font-size: 15px;
   }
 
@@ -146,6 +153,10 @@ a.button:hover {
     font-size: 18px;
     padding: 10px 16px;
   }
+
+  a.button:hover {
+  background-color: #094B72; /* Samme farve, som knappen har, da hover-effekt ikke vil virke på det mobile device dette er tiltænkt */
+}
 
   .centrer-knap {
     margin: 40px 0;
