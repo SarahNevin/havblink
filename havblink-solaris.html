@@ -107,8 +107,10 @@
       </nav>
     </div>
   </header>
+
+   <!-- Intro til Solaris-vinen -->
     <main>
-        <section class="vinintro">
+        <section class="vinintro">  <!-- Denne intro adskiller sig fra de øvrige på min side. Her bruges sektion til at lave en flexbox så indholdet (tekst, billede, certifikater) kan stå på række på PC. På mobil vis de komme til at stå som column. -->
             <div class="vinintro-tekst">
                 <h1>Havblink Solaris 2023</h1>
                 <p>Vores økologiske Solaris 2023 er frisk, aromatisk og alsidig – perfekt til enhver lejlighed.</p>
@@ -122,14 +124,16 @@
             <div class="vinintro-billede">
                 <img src="images/havblink-solaris-hvidvin-uden-baggrund-vinbeskrivelse.png" alt="Havblink Solaris 2023-vinflaske">
 
-                <div class="vinintro-certifikater">
+                <div class="vinintro-certifikater"> <!-- Certifikaterne er lavet som en flexbox så de også kan stå på række på mobil. -->
                     <img src="images/oe-maerket-oekologisk-dansk-vin.svg" alt="Ø-mærke – statskontrolleret økologisk">
                     <img src="images/vegansk-vin.svg" alt="Veganermærke">
                 </div>
             </div>
         </section> 
-        
-        <div class="vinbeskrivelse">
+
+        <!-- Beskrivelse af vinen, smagsprofil, madparring og information om Solaris-druen -->
+        <!-- Her bruges grid, da indholdet skal vises i både kolonner og rækker(tekst og ikoner) -->
+        <div class="vinbeskrivelse"> 
             <div class="vinflaske-billede">
                 <img src="images/havblink-solaris-hvidvin-med-baggrund-stort.jpg" alt="Havblink Solaris 2023 – økologisk dansk hvidvin">
             </div>
@@ -137,7 +141,7 @@
             <div class="smagsprofil">
                 <h2>Smagsprofil</h2>
                 <div class="smagsprofil-linje">
-                    <span>Tør</span>
+                    <span>Tør</span> <!-- Span bruges, da det er et inline-tag, så indholdet bliver på samme linje  -->
                     <span>
                         <img src="images/smagsprofil-tomt-glas.svg" alt="smagsprofil tomt glas">
                         <img src="images/smagsprofil-fyldt-glas.svg" alt="smagsprofil fyldt glas">
@@ -178,7 +182,7 @@
                         <img src="images/smagsprofil-tomt-glas.svg" alt="smagsprofil tomt glas">
                         <img src="images/smagsprofil-fyldt-glas.svg" alt="smagsprofil fyldt glas">
                     </span>
-                    <span>Høj frugt</span>
+                    <span>Høj frugt</span> 
                 </div>
             </div>
        
@@ -219,6 +223,8 @@
         </div>
 
     </main>
+
+    <!-- Footer -->
 
  <footer class="footer">
    <div class="footer-sektion">

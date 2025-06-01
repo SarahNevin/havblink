@@ -118,7 +118,7 @@
             <p>Vores Solaris er kåret som Årets Danske Hvidvin hele 4 gange – et tydeligt bevis på vores dedikation og håndværk.</p>
         </section> 
         
-        <section class="artikel">
+        <section class="artikel">  <!-- I artiklerne er elementerne arrangeret i en flexbox med tekst og billede. Billede er skiftevis på højre og venstre hånd på PC. I responsive vises billedet altid over teksten. -->
             <img src="images/flemming-henriette-plukker-druer-havblink-hvidvin.jpg" alt="Havblinks ejere Flemming og Henriette plukker druer" class="artikel-billede">
 
             <div class="artikel-tekst">
@@ -134,7 +134,7 @@
             </div>
         </section>
 
-        <section class="artikel artikel-billede-højre">
+        <section class="artikel artikel-billede-højre"> <!-- Denne ekstra class bruges for at indikere at billedet her vises på højre side. Det er derfor nødvendigt med column-reverse i responsive for at få billedet til at blive vist først. -->
             <div class="artikel-tekst">
                 <h2>Om os og vores marker</h2>
                 <p>Vi dyrker 5 druesorter: Solaris, Muscaris, Ortega, Johanniter og Madeleine Angevine. De har alle gode smagskvaliteter og passer godt til det danske klima og vores økologiske tilgang.</p>
@@ -175,6 +175,8 @@
         </div>
 
     </main>
+
+     <!-- Footer -->
 
     <footer class="footer">
       <div class="footer-sektion">
