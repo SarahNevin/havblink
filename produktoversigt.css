@@ -1,4 +1,4 @@
-/* produktpræsentation i flexbox med billede og tekst*/
+/* produktpræsentation i flexbox med billede og tekst – bruges til Vores Vine og Vinsmagning */
 
 .produktoversigt {
     display: flex; /* Flexbox for at få tekstsektion og billede til at være ved siden af hinanden */
@@ -9,7 +9,7 @@
 
 .produktbeskrivelse {
     display: flex; /* Flexbox for at kunne bruge "column" så underoverskrift, brødtekst og læs mere-knap stables vertikalt (knap skal vises i bunden til højre) */
-    flex-direction: column;
+    flex-direction: column; /* Kolonnevisning for at placere indholdet under hinanden */
     justify-content: space-between; /* Fordeler pladsen mellem underoverskrift, brødtekst og knap */
 }
 

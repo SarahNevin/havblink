@@ -1,7 +1,7 @@
-/* artikelsektion med billede og tekst i en flexbox */
+/* artikelsektion med billede og tekst i en flexbox. Bruges på siderne Vin med omtanke, Hvorfor dansk hvidvin og Om Havblink */
 
 .artikel {
-    display: flex; /* Flexbox så billede og tekst står ved siden af hinanden frem for i en kolonne*/
+    display: flex; /* Flexbox så billede og tekst står ved siden af hinanden frem for i en kolonne */
     width: 100%; /* Bredde på artikelsektionen er 100% af viewportens bredde */
     background-color: rgba(166, 119, 0, 0.60); /* 60% gennemsigtighed for at skabe mindre kontrast og gøre teksten nemmere at læse */
 }

@@ -25,8 +25,8 @@
 
 .vine-container {
     display: flex; /* Flexbox for at arrangere vinene i en række */
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centrerer indholdet horisontalt */
+    align-items: center; /* Centrerer indholdet vertikalt */
     margin-bottom: 30px; /* Margin under slideren for at skabe luft */
     padding: 30px; /* Padding omkring slideren for at skabe luft */
   }
@@ -51,23 +51,23 @@
   }
 
 .vine-container {
-  width: 100%;
+  width: 100%; /* Giver slideren fuld bredde af viewporten */
   overflow-y: hidden; /* Forhindrer vertikal scrollbar, da vi kun vil have horisontal scrolling */
 }
 
 /* Scrollbar i slideren */
 
 .scrollbar {
-  display: flex;
-  min-width: 100%;
-  align-items: center;
+  display: flex; /* Flexbox for at få vinene til at stå på række */
+  min-width: 100%; /* Så scrollbarens bredde er den samme som viewportens bredde */
+  align-items: center; /* Centrerer indholdet vertikalt i slideren */
   justify-content: start; /* Justerer indholdet til venstre i slideren */
   overflow-x: auto; /* Gør det muligt at scrolle horisontalt */
-  overflow-y: hidden; /* Forhindrer vertikal scrollbar, da vi kun vil have horisontal scrolling */
+  overflow-y: hidden; /* Forhindrer vertikal scrollbar, da der kun skal være  horisontal scrolling */
 }
 
 .slide {
-  width: 400px; /* Fast bredde på hver vin for at sikre ensartet størrelse */
+  width: 400px; /* Fast bredde på hver vin for at sikre en ensartet størrelse */
   flex-shrink: 0; /* Forhindrer at vinen skaleres ned, når der er for mange i slideren */
   margin-bottom: 20px; /* Margin under hver vin for at skabe luft */
   display: flex; /* Flexbox for at arrangere indholdet i hver vin */
@@ -79,7 +79,7 @@
 
 .slide h5 {
   margin-top: 5px; /* Margin rundt om produktnavnet for at skabe luft */
-  margin-bottom: 30px;
+  margin-bottom: 30px; 
   max-width: 15ch; /* Maksimal bredde så produktnavnene står på mere end en linje, så de står lige under den tilhørende vin */
   text-align: center; /* Centrerer produktnavnet */
 }
@@ -111,17 +111,16 @@
 }
 
 .venstre {
-  left: 10px;
+  left: 10px; /* Placering af venstre pil */
 }
 
 .hoejre {
-  right: 10px;
+  right: 10px; /* Placering af højre pil */
 }
 
 .vine-container {
   position: relative; /* Nødvendigt for at positionere pilene tæt ved containeren */
 }
-
 
 /* Brandhistorie-tekst */
 
@@ -147,20 +146,20 @@
   @media (max-width: 768px) {
   /* Hero-billede */
   .hero-billede img {
-    height: auto;
-    object-fit: cover;
+    height: auto; /* Højden justeres automatisk for at bevare proportionerne */
+    object-fit: cover; /* Sikrer at billedet dækker hele containeren */
   }
 
   /* Slider overskrift */
   .vine-overskrift {
-    margin: 20px 20px 0 20px;
-    text-align: center;
+    margin: 20px 20px 0 20px; /* Mindre margin for at passe til den mindre skærm */
+    text-align: center; /* Centrerer overskriften for at gøre den mere læsevenlig på mindre skærme */
   }
 
   /* Slider */
   .vine-container {
-    padding: 10px 0;
-    margin: 0;
+    padding: 10px 0; /* Mindre padding på mindre skærme */
+    margin: 0; /* Fjerner margin under slideren, så det passer bedre til den mindre skærm */
     padding: 20px; /* Padding omkring slideren for at skabe luft */
   }
 

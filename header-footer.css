@@ -23,9 +23,9 @@
 }
 
 .logo svg {
-    width: 100%;
-    height: auto;
-    display: block;
+    width: 100%; /* Sørger for logoet fylder hele bredden af sin container */
+    height: auto; /* Højden justeres automatisk for at bevare proportionerne */
+    display: block; /* Fjerner eventuelt mellemrum under SVG'en */
 }
 
 /* styles for hovedmenupunkterne i navigationsmenuen */
@@ -95,75 +95,76 @@
 
 /* responsiv header (burgermenu) */
 .mobilmenu {
-  position: relative;
+  position: relative; /* For at placere burgerikonet korrekt i headeren */
   display: none; /* skjules på desktop */
 }
 
 /* Vis burgerikon */
 .burgerikon,
 .luk {
-  font-size: 40px;
-  cursor: pointer;
-  color: #fff;
-  position: absolute;
-  z-index: 10001;
+  font-size: 40px; /* Størrelse på burger- og luk-ikon */
+  color: #fefefe; /* Hvid farve for at matche headerens farve */
+  cursor: pointer; /* Viser ikonerne er klikbare */
+  position: absolute; /* For at placere ikonerne i headeren */
+  z-index: 10001; /* Sørger for at ikonerne ligger over andre elementer */
   position: relative; /* For at placere ikonerne i midten af headeren vertikalt */
 }
 
 .burgerikon {
-  display: block;
+  display: block; /* Viser burgerikonet som standard */
 }
 
 .luk {
-  display: none;
+  display: none; /* Skjuler luk-ikonet som standard */
 }
 
 /* Skjul checkbox */
 #mobilmenu-toggle {
-  display: none;
+  display: none; /* Skjuler checkboxen, da den kun skal bruges til at styre den visningen af mobilmenuen */
 }
 
 /* Mobilnavigation */
 #navigation-mobil {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  background-color: #3C511B;
-  z-index: 10000;
-  overflow-y: auto;
+  display: none; /* Skjuler mobilnavigationen som standard */
+  position: fixed; /* Fastlåser menuen, så den ikke scroller med siden */
+  top: 0; /* Placerer menuen øverst på siden */
+  left: 0; /* Venstrejustering for at dække hele skærmen */
+  height: 100vh; /* Højden på menuen er 100% af viewportens højde */
+  width: 100%; /* Bredde på menuen er 100% af viewportens bredde */
+  background-color: #3C511B; /* Mørk olivengrøn baggrund for at matche headeren */
+  z-index: 10000; /* Sørger for at menuen ligger over andre elementer på siden */
+  overflow-y: auto; /* Gør det muligt at scrolle i menuen, hvis indholdet er for langt til at passe på skærmen */
 
 }
 
 /* Når checkbox er checked – vis menu og X */
 #mobilmenu-toggle:checked ~ .burgerikon {
-  display: none;
+  display: none; /* Skjuler burgerikonet, når menuen er åben */
 }
 
 #mobilmenu-toggle:checked ~ .luk {
-  display: block;
+  display: block; /* Viser luk-ikonet, når menuen er åben */
 }
 
 #mobilmenu-toggle:checked ~ #navigation-mobil { /* Disse styles, der styrer menupunkternes placering gælder kun, når den responsive menu er åben (så de ikke ødelægger burger- og x-ikonernes funktionalitet og placering) */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  text-align: center;
+  display: flex; /* Gør mobilnavigationen til en flex-container for at arrangere menupunkterne vertikalt */
+  flex-direction: column; /* Arrangerer menupunkterne i en kolonne */
+  justify-content: center; /* Centrerer menupunkterne vertikalt i menuen */
+  align-items: center; /* Centrerer menupunkterne horisontalt i menuen */
+  padding: 20px; /* Padding for at give luft omkring menupunkterne */
+  text-align: center; /* Centrerer teksten i menupunkterne */
   overflow-y: hidden; /* skjul vertikal scrollbar, så der ikke kommer en scrollbar inde i selve overlay-menuen, når undermenupunkterne foldes ud. */
 }
 
+/* Responsive styles */
 
 @media (max-width: 768px) {
   .mobilmenu {
-    display: block;
+    display: block; /* Viser burgerikonet på mobil */
   }
 
   #navigation-desktop {
-    display: none;
+    display: none; /* Skjuler desktop-navigationen på mobil for at undgå overlap med burgerikonet */
   }
 .header {
   height: 100px; /* Højden på headeren */
@@ -178,15 +179,15 @@
 
 /* Undermenuer */
 #navigation-mobil ul {
-  padding: 0;
+  padding: 0; /* Fjerner padding omkring menupunkterne */
 }
 
 /* Font i mobilmenu */
 #navigation-mobil li {
-  font-family: "marine-up", Helvetica, sans-serif;
-  font-size: 20px;
-  color: #fefefe;
-  text-decoration: none;
+  font-family: "marine-up", Helvetica, sans-serif; /* Marine Up til menupunkterne i mobilmenuen, så de matcher over- og underskrifter på resten af sitet */
+  font-size: 20px; /* Mindre størrelse menupunkterne i mobilmenuen */
+  color: #fefefe; /* Samme hvide tekstfarve som i resten af headeren */
+  text-decoration: none; /* Fjerner understregning af links */
   list-style: none; /* Fjerner punkttegn fra menupunkter */
   padding: 10px 0; /* Padding for at gøre menupunkterne større og mere klikbare */
 }
@@ -201,19 +202,9 @@
   text-decoration: none; /* Fjerner understregning af links */
 }
 
-#navigation-mobil li:hover {
-  color: #B06821; /* varm orange farve ved hover for at matche styles i desktop-navigationen */
-  font-weight: bold;
-}
-
-#navigation-mobil a:hover {
-  color: #B06821; /* varm orange farve ved hover for at matche styles i desktop-navigationen */
-  font-weight: bold;
-}
-
 /* Undermenu mobil - skjul checkboxe */
 #navigation-mobil input[type="checkbox"] {
-  display: none;
+  display: none; /* Skjuler checkboxe, da de kun bruges til at få undermenuerne til at folde sig ud */
 }
 
 /* Skjul automatisk undermenupunkter i den responsive menu */
@@ -233,15 +224,15 @@
   background-color: #3C511B;
   height: 300px; /* Højden på footer */
   color: #fefefe;
-  display: flex;
-  justify-content: space-between;
+  display: flex; /* Flexbox for at få footer-sektionerne til at blive vist horisontalt */
+  justify-content: space-between; /* Fordeler pladsen i flexboxen jævnt */
   padding: 60px; /* Padding for at skabe luft mellem elementerne og footerens kanter */
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-wrap: wrap; /* Hvis footer-sektionerne ikke kan være i én række, så de kan bryde til næste linje */
+  gap: 20px; /* Giver luft mellem footer-sektionerne */
 }
 
 .footer h4 {
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
 }
 
 .footer p, .footer a {
@@ -254,24 +245,24 @@
 }
 
 .footer .nyhedsbrev form {
-  display: flex;
+  display: flex; /* Flexbox for at arrangere input og knap i en række */
   gap: 15px;
   margin-top: 30px;
 }
 
 .footer .some-ikoner {
-  display: flex;
+  display: flex; /* Flexbox for at arrangere SoMe-ikonerne på række */
   margin-top: 20px;
   gap: 20px;
 }
 
 .footer .some-ikoner img {
-  width: 50px;
+  width: 50px; /* Billederne i SoMe-ikonerne skal have en fast bredde og højde */
   height: 50px;
 }
 
 .footer .nyhedsbrev .button {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem; /* Padding for at gøre knappen større og mere klikbar */
   color: #fefefe;
 }
 
@@ -279,34 +270,34 @@
 
 @media (max-width: 768px) {
   .footer {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    padding: 40px 20px;
-    text-align: center;
+    flex-direction: column; /* Arrangerer footer-sektionerne i en kolonne på mindre skærme */
+    align-items: center; /* Centrerer footer-sektionerne horisontalt */
+    height: auto; /* Højden på footer justeres automatisk for at passe til indholdet */
+    padding: 40px 20px; /* Mindre padding på mindre skærme */
+    text-align: center; /* Centrerer teksten i footer-sektionen */
   }
 
   .footer-sektion {
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* Margin under hver footer-sektion for at skabe luft */
   }
 
   .footer .nyhedsbrev form {
-    width: auto;
-    flex-direction: column;
+    width: auto; /* Gør formularen bred nok til at passe til indholdet */
+    flex-direction: column; /* Arrangerer input og knap i en kolonne på mindre skærme */
   }
 
   .footer .nyhedsbrev input[type="email"] {
-    padding: 10px;
+    padding: 10px; /* Padding for at gøre inputfeltet større og mere klikbart */
   }
 
   .footer .nyhedsbrev .button {
-    display: inline-block;
-    text-align: center;
-    padding: 12px 0;
+    display: inline-block; /* Gør knappen til en inline-block for at centrere den under feltet til e-mailadressen */
+    text-align: center; /* Centrerer teksten i knappen */
+    padding: 12px 0; /* Padding for at gøre knappen større og mere klikbar */
   }
 
   .footer .some-ikoner {
-    justify-content: center;
+    justify-content: center; /* Centrerer SoMe-ikonerne horisontalt */
   }
 }
 

@@ -1,4 +1,6 @@
-/* Flexbox til introsektion */
+/* Side med grid til vinbeskrivelser. Denne bruges på siden "Solaris" */
+
+/* Flexbox til introsektion da den er delt i tre med indhold, der skal vises på række */
 
 .vinintro {
     display: flex; /* Flexbox for at centrere hele introsektionen på siden */
@@ -30,12 +32,12 @@
 }
 
 .knap-vinbeskrivelse {
-    align-self: flex-end;
+    align-self: flex-end; /* Justerer knappen til bunden af boksen */
 }
 
 .vinintro-billede {
-    display: flex;
-    flex-direction: row;
+    display: flex; /* Flexbox for at arrangere indholdet på en række */
+    flex-direction: row; /* Rækkevisning for at placere billedet og certifikaterne ved siden af hinanden */
     align-items: center; /* Centrerer billedet horisontalt */
     gap: 30px; /* Giver luft mellem billedet og teksten */
     flex: 1; /* Giver billedet en fleksibel bredde, så det fylder den resterende plads i containeren */
@@ -57,7 +59,7 @@
 /* Vinbeskrivelse med info om vinen og smagsprofil */
 
 .vinbeskrivelse {
-   display: grid; /* Grid layout for at arrangere ikonerne i et gitter */
+   display: grid; /* Grid-layout for at arrangere ikonerne i et gitter. Jeg har valgt grid frem for flexbox, da indholdet her skal vises i både kolonner og rækker */
    grid-template-columns: 1fr 1fr; /* To kolonner, der hver tager halvdelen af bredden */
    grid-template-areas: 
     "vinflaske-billede smagsprofil"
@@ -78,17 +80,17 @@
 }
 
 .ikoner span {
-  display: flex;    
-  flex-direction: column;
-  align-items: center;
-  font-size: 20pt;
+  display: flex; /* Flexbox for at arrangere tekst og billede i ikonerne */    
+  flex-direction: column; /* Kolonnevisning for at placere tekst under billedet */
+  align-items: center; /* Centrerer tekst og billede i ikonerne */
+  font-size: 20pt; /* Størrelse på labels ud for ikonerne */
   font-family: "marine-up", Helvetica, sans-serif;
-  text-align: center;
+  text-align: center; 
 }
 
 .smagsprofil-linje {
-  display: flex;
-  justify-content: space-between;
+  display: flex; /* Flexbox for at få lingerne til at stå på række */
+  justify-content: space-between; /* Fordeler pladsen ligeligt mellem ikonerne */
   margin-bottom: 20px; /* Margin under hver linje for at skabe luft */
 }
 
@@ -98,8 +100,8 @@
 }
 
 .smagsprofil-linje span {
-  display: flex;
-  align-items: center;
+  display: flex; /* Flexbox for at arrangere tekst og billede i linjerne */
+  align-items: center; /* Centrerer tekst og billede i linjerne */
 }
 
 .smagsprofil-linje > span:first-child,
@@ -114,8 +116,8 @@
 }
 
 .vinflaske-billede {
-  grid-area: vinflaske-billede;
-  display: flex;
+  grid-area: vinflaske-billede; /* Definerer grid-området for vinflaske-billedet */
+  display: flex; /* Flexbox for at centrere billedet */
   width: 100%; /* Billedet fylder hele bredden af sin grid-celle */
 }
 
@@ -124,8 +126,8 @@
   background-color: rgba(166, 119, 0, 0.6);
   padding: 20px; /* Padding for at give luft omkring teksten i smagsprofil-sektionen */
   overflow: visible; /* Sørger for at indholdet teksten ikke bliver cut-off, hvis den er for lang */
-  display: flex;
-  flex-direction: column;
+  display: flex; /* Flexbox for at arrangere indholdet i en kolonne */
+  flex-direction: column; /* Kolonnevisning for at placere smagsprofilen under billedet */
   align-items: center; /* Centrerer indholdet i madparring-sektionen */
   justify-content: center; /* Centrerer indholdet vertikalt */
 }
@@ -134,15 +136,15 @@
   grid-area: madparring;
   background-color: rgba(166, 119, 0, 0.6);
   padding: 20px; /* Padding for at give luft omkring teksten i madparring-sektionen */
-  display: flex;
-  flex-direction: column;
+  display: flex; /* Flexbox for at arrangere indholdet i en kolonne */
+  flex-direction: column; /* Kolonnevisning */
   align-items: center; /* Centrerer indholdet i madparring-sektionen */
   justify-content: center; /* Centrerer indholdet vertikalt */
 }
 
 .solaris-info {
   grid-area: solaris-info;
-  background-color: #CBE3E2;
+  background-color: #CBE3E2; /* Baggrundsfarve der matcher baggrundsfarven på billedet, der også er med i dette grid */
 }
 
 .solaris-klima {
@@ -153,8 +155,8 @@
 .smagsnoter {
   grid-area: smagsnoter; 
   background-color: rgba(166, 119, 0, 0.6);
-  display: flex;
-  flex-direction: column;
+  display: flex; /* Flexbox for at arrangere indholdet i en kolonne */
+  flex-direction: column; /* Kolonnevisning for at placere smagsnoter under de øvrige sektioner */
   align-items: center; /* Centrerer indholdet i smagsnoter-sektionen */
   justify-content: center; /* Centrerer indholdet vertikalt */
 }
@@ -171,7 +173,7 @@
   margin-left: auto; /* Ovenstående centrerer ikke overskriften helt. Derfor bruges margin-left + margin right auto */
   margin-right: auto;
   margin-bottom: 20; /* Margin under og overskrifter for at skabe luft */
-  max-width: 15ch;
+  max-width: 15ch; 
 }
 
 .vinbeskrivelse p {
@@ -191,29 +193,29 @@
     }
 
   .vinintro-tekst h1 {
-    font-size: 30px;
-    max-width: 100%;
+    font-size: 30px; /* Mindre skriftstørrelse */
+    max-width: 100%; /* Giver mere plads til overskriften i responsive */
   }
 
   .knap-vinbeskrivelse {
-    align-self: center;
+    align-self: center; /* Centrerer knappen for at skabe balance i layoutet */
     margin-top: 20px;
   }
 
   .vinintro-billede {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    flex-direction: column; /* Kolonnevisning */
+    align-items: center; /* Centrerer billedet og certifikaterne */
+    gap: 20px; 
   }
 
   .vinintro-certifikater {
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: row; /* Rækkevisning for at placere certifikaterne ved siden af hinanden */
+    justify-content: center; /* Centrerer certifikaterne horisontalt */
     gap: 15px;
   }
 
   .vinintro-certifikater img {
-    height: 60px;
+    height: 60px; /* Mindre størrelse i responsive */
   }
 }
 
@@ -225,8 +227,8 @@
         flex-direction: column; /* Kolonnevisning for at placere alle sektioner under hinanden */
     }
     .vinflaske-billede img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Billedet fylder hele bredden af sin container */
+    height: auto; /* Højden justeres automatisk for at bevare proportionerne */
   }
 
   .smagsprofil,
@@ -235,43 +237,43 @@
   .solaris-klima,
   .smagsnoter {
     padding: 20px;
-    text-align: center;
+    text-align: center; /* Centrerer teksten i hver sektion for at skabe balance i layoutet */
   }
 
   .ikoner {
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     gap: 20px;
   }
 
   .ikoner img {
-    width: 60px;
+    width: 60px; /* Mindre størrelse på ikoner i responsive */
   }
 
   .smagsprofil-linje {
-    display: flex;
-    align-items: center;
+    display: flex; /* Flexbox for at arrangere smagsprofilerne i en kolonne ved responsv visning */
+    align-items: center; 
     text-align: center;
   }
 
   .smagsprofil-linje span {
-    justify-content: center;
-    margin-bottom: 10px;
+    justify-content: center; /* Centrerer indholdet i hver linje */
+    margin-bottom: 10px; /* Margin under hver linje for at skabe luft */
   }
 
   .smagsprofil-linje > span:first-child,
   .smagsprofil-linje > span:last-child {
     width: 40px; /* Giver labels en mindre bredde */
-    text-align: center;
+    text-align: center; /* Centrerer labels for at gøre layoutet mere ensartet */
   }
 
   .vinbeskrivelse h2 {
-    font-size: 24px;
+    font-size: 24px; /* Mindre skriftstørrelser i responsive */
     max-width: 25ch;
   }
 
   .vinbeskrivelse p {
     font-size: 15px;
-    max-width: 70%;
+    max-width: 70%; /* Giver mere plads til brødteksten i responsive */
     text-align: left; /* Venstrestiller brødteksten for bedre læsbarhed */
   }
   .vinbeskrivelse span {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Havblink Hvidvin – økologisk dansk vin fra Sydfyn</title>
+    <title>Havblink Hvidvin – økologisk dansk hvidvin fra Sydfyn</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="header-footer.css">
     <link rel="stylesheet" href="forside.css">
@@ -23,9 +23,9 @@
     <!-- Navigation til desktop -->
     <div id="navigation-desktop">
       <nav>
-        <ul class="navigationsmenu">
+        <ul class="navigationsmenu"> <!-- Navigationen er lavet som en ul liste for at kunne tilføje dropdown-lister som html -->
           <li class="dropdown-menu"><a href="#">Vine &#9662;</a>
-            <ul class="dropdown-undersider længere-boks">
+            <ul class="dropdown-undersider længere-boks"> <!-- En class til en længere dropdown-boks da titlerne på undersiderne her er længere -->
               <li><a href="vores-vine">Vores vine</a></li>
               <li><a href="dansk-hvidvin">Hvorfor dansk vin?</a></li>
               <li><a href="#">Gaveidéer</a></li>
@@ -61,15 +61,15 @@
 
     <!-- Responsiv navigation med burgermenu -->
     <div class="mobilmenu">
-      <input type="checkbox" id="mobilmenu-toggle">
-      <label for="mobilmenu-toggle" class="burgerikon">&#9776;</label>
+      <input type="checkbox" id="mobilmenu-toggle"> <!-- Checkbox bruges som alternativ til javascript for at kunne lave folde-ud-menuer på den responsive visning -->
+      <label for="mobilmenu-toggle" class="burgerikon">&#9776;</label> <!-- Burger- og luk-ikon har jeg indsat som unicode, da det var en nemmere og mere fleksibel løsning ift. et billede -->
       <label for="mobilmenu-toggle" class="luk">&#10005;</label>
 
       <nav id="navigation-mobil" class="dropdown-mobil">
         <ul>
           <li>
-            <label for="toggle-vine">Vine &#9662;</label>
-            <input type="checkbox" id="toggle-vine">
+            <label for="toggle-vine">Vine &#9662;</label> <!-- Label bruges til at aktivere checkboxen nedenunder, så undersiderne kan vises -->
+            <input type="checkbox" id="toggle-vine"> <!-- Checkbox bruges for at kunne lave en dropdown-menu uden brug javascript -->
             <ul class="mobil-undersider">
               <li><a href="vores-vine">Vores vine</a></li>
               <li><a href="dansk-hvidvin">Hvorfor dansk vin?</a></li>
@@ -115,7 +115,7 @@
     <div class="hero-billede">
       <img src="images/Havblink-hvidvin-udsigt-over-mark-og-kyst-hero.jpg" alt="Havblink Hvidvin - Udsigt over vores vinmarker">
     </div>
-      <section class="intro">
+      <section class="intro"> <!-- Introteksten på alle siderne er delt ind i section class="intro", da disse alle skal have det samme layout for at skabe konsistens -->
         <h1>HAVBLINK: prisvindende dansk hvidvin</h1>
         <p>Hos Havblink byder vi på prisvindende <a href=dansk-hvidvin>dansk hvidvin</a> fra vores familieejede vingård under sydfynske himmelstrøg.</p>
         <br>
@@ -124,14 +124,14 @@
         <p>Når du skænker et glas Havblink Hvidvin, får du et lille stykke af Sydfyn – skabt med godt håndværk og respekt for naturen.</p>
       </section>
 
-   <section class="vores-hvidvine">
+   <section class="vores-hvidvine"> <!-- Denne sektion er lavet for at kunne lave en scrollbar der viser Havblinks produkter. Jeg har valgt section frem for div da dette er hoved-containeren -->
       <div class="vine-overskrift">
         <h2>Opdag vores hvidvine:</h2>
       </div>
-      <div class="vine-container">
-        <button class="venstre pil">&#10094;</button>
+      <div class="vine-container"> <!-- Containeren til selve slideren med vine -->
+        <button class="venstre pil">&#10094;</button> <!-- Pile indsættes for at illustrere, at man kan scrolle som alternativ til klikbare pile, da jeg ikke kan bruge javascript. -->
         <div class="scrollbar">
-          <div class="slide">
+          <div class="slide"> <!-- Hver slide indeholder produktbillede og -titel -->
             <a href="havblink-solaris">
               <img src="images/havblink-solaris-hvidvin-uden-baggrund-scrollbar.png" alt="Havblink Solaris 2023">
             </a>
@@ -158,6 +158,8 @@
       </div>
     </section>
 
+
+<!-- Havblinks brandhistorie kort fortalt -->
     <section class="brandhistorie">
       <h2>Vores sydfynske vineventyr</h2>
       <p>Vores vinrejse begyndte i 2010, da vi fulgte vores drøm om at skabe dansk hvidvin i international klasse. I dag har vi 2.500 vinstokke og producerer økologisk kvalitetsvin med et lavt CO₂-aftryk.</p>
@@ -168,8 +170,10 @@
     </section>
   </main>
 
+
+<!-- Footer -->
  <footer class="footer">
-   <div class="footer-sektion">
+   <div class="footer-sektion"> <!-- De fire sektioner i footeren er opdelt i denne class for at kunne bruge flexbox  -->
      <h4>ADRESSE</h4>
      <p>Havblink Hvidvin<br>
       Kystagervej 12<br>
@@ -187,10 +191,10 @@
       Fredag: 11-15</p>
    </div>
 
-   <div class="footer-sektion nyhedsbrev">
+   <div class="footer-sektion nyhedsbrev"> <!-- Nyhedsbrevet har en ekstra class for at kunne style det anderledes -->
      <h4>TILMELD DIG VORES NYHEDSBREV</h4>
      <form>
-      <input type="email" placeholder="E-MAIL">
+      <input type="email" placeholder="E-MAIL"> <!-- Inputfelt til e-mail. Placeholder-teksten giver brugeren et hint til, hvad der skal stå i feltet. -->
       <a href="#" class="button">TILMELD</a> <!-- Knap til tilmelding af nyhedsbrev. Lavet som et link frem for <button> for at undgå javascript. -->
      </form>
    </div>
